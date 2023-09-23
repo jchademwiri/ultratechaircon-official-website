@@ -1,5 +1,6 @@
-import { links } from "@/data"
 import { logo } from "@/data/images"
+import { navLinks } from "@/data/links"
+import { TLink } from "@/lib/types"
 import { randomUUID } from "crypto"
 import Image from "next/image"
 import Link from "next/link"
@@ -15,7 +16,7 @@ const Header = () => {
       <div className=" " >
         <ul className="flex gap-3" >
 
-          {links.map(({ label, href }) => (
+          {navLinks.map(({ label, href }: TLink) => (
             <Link key={randomUUID()} className="hover:text-primary hidden sm:block" href={href}>
               <li>
                 {label}

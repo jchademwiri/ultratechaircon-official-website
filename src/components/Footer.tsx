@@ -1,4 +1,5 @@
-import { links } from "@/data"
+import { socialLinks } from "@/data/links";
+import { TLink } from "@/lib/types";
 import { randomUUID } from "crypto"
 import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link"
@@ -34,9 +35,9 @@ const Footer = () => {
         </div>
       </section>
       <section className="bg-blue-950">
-        <div className="grid sm:flex justify-between items-center max-w-7xl m-auto w-[90%]">
+        <div className="grid sm:flex justify-between text-center items-center max-w-7xl m-auto w-[90%]">
           <ul className="flex gap-3 py-7">
-            {links.map(({ label, href }) => (
+            {socialLinks.map(({ label, href }: TLink) => (
               <Link key={randomUUID()} className="hover:text-primary py-2" href={href}>
                 <li>
                   {label}

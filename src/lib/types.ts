@@ -13,4 +13,9 @@ type TLogo = {
     alt: string;
 }
 
-export type { TCard, TLogo }
+type TLink = {
+    label: string;
+    href: string;
+}
+
+export type { TCard, TLogo, TLink }
