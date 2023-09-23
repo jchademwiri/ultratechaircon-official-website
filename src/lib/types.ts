@@ -7,14 +7,10 @@ type TCard = {
     desc: string;
 }
 
-type TPartnerLogo = {
-    logo: any;
-    alt: string;
-}
 
 type TLogo = {
     logo: StaticImageData;
     alt: string;
 }
 
-export type { TPartnerLogo, TCard, TLogo }
+export type { TCard, TLogo }

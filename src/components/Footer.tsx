@@ -6,8 +6,8 @@ import Link from "next/link"
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="">
-      <section className="py-5 gap-6 grid md:grid-cols-3 sm:grid-cols-2 max-w-7xl m-auto my-7 w-[90%]" >
+    <footer className="text-white">
+      <section className="py-5 gap-6 grid lg:grid-cols-3 md:grid-cols-2 max-w-7xl m-auto my-7 w-[90%]" >
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">ULTRATECH AIRCON</h3>
           <p>Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and regassing, compressor replacement, PCB repairs and replacement. We also do overall repairs and performance assessment on air-conditioning units.</p>
@@ -15,10 +15,10 @@ const Footer = () => {
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">OUR SERVICES</h3>
           <ul className="grid gap-2 " >
-            <li className="flex border-b border-slate-400 my-1"> <ChevronRight /> Aircon Installation</li>
-            <li className="flex border-b border-slate-400 my-1"> <ChevronRight /> AC Maintenance</li>
-            <li className="flex border-b border-slate-400 my-1"> <ChevronRight /> Refrigeration & Cold Rooms</li>
-            <li className="flex border-b border-slate-400 my-1"> <ChevronRight /> Air-conditioning Repairs</li>
+            <li className="flex border-b border-blue-200 py-1 items-center"> <ChevronRight size={18} /> Aircon Installation</li>
+            <li className="flex border-b border-blue-200 py-1 items-center"> <ChevronRight size={18} /> AC Maintenance</li>
+            <li className="flex border-b border-blue-200 py-1 items-center"> <ChevronRight size={18} /> Refrigeration & Cold Rooms</li>
+            <li className="flex border-b border-blue-200 py-1 items-center"> <ChevronRight size={18} /> Air-conditioning Repairs</li>
           </ul>
         </div>
         <div>
@@ -33,7 +33,7 @@ const Footer = () => {
             <Mail /> support@ultratechaircon.co.za</Link>
         </div>
       </section>
-      <section className="bg-primary">
+      <section className="bg-blue-950">
         <div className="grid sm:flex justify-between items-center max-w-7xl m-auto w-[90%]">
           <ul className="flex gap-3 py-7">
             {links.map(({ label, href }) => (
