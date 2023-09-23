@@ -1,4 +1,3 @@
-import { logo } from "@/data/images"
 import { Cog, ThermometerSnowflake, Wrench } from 'lucide-react';
 import Card from "./Card"
 
