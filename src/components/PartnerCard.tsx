@@ -1,12 +1,7 @@
+import { TLogo } from "@/data/lib/types"
+import Image from "next/image"
 
-import Image, { StaticImageData } from "next/image"
-
-type LogoProps = {
-    logo: StaticImageData;
-    alt: string;
-}
-
-const PartnerCard = ({ logo, alt }: LogoProps) => {
+const PartnerCard = ({ logo, alt }: TLogo) => {
     return (
         <Image src={logo} alt={alt} className="w-28 h-28 object-contain p-2" />
     )

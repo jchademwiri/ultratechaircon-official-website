@@ -11,18 +11,21 @@ const HomeService = () => {
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 my-5 py-5 " >
                 <Card
-                    icon={<Cog className="text-primary" size={50} />}
-                    alt="alt text"
+                    icon={
+                        <Cog className="text-primary" size={50} />
+                    }
                     title="Air Conditioners Installation"
                     desc="Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and re-gassing, compressor replacement." />
                 <Card
-                    icon={<Wrench className="text-primary" size={50} />}
-                    alt="alt text"
+                    icon={
+                        <Wrench className="text-primary" size={50} />
+                    }
                     title="Aircon Repair Services"
                     desc="We handle all common faults in air-conditioning, which include aircon not cooling aircon not running, aircon tripping, aircon reporting error code, aircon dripping water and noise." />
                 <Card
-                    icon={<ThermometerSnowflake className="text-primary" size={50} />}
-                    alt="alt text"
+                    icon={
+                        <ThermometerSnowflake className="text-primary" size={50} />
+                    }
                     title="Refrigeration & Coldroom Services"
                     desc="Fridges repairs & installation of cold rooms, chillers and mortuaries. We handle repairs for domestic, commercial and industrial refrigeration equipment onsite and off site." />
             </div>
