@@ -12,11 +12,11 @@ const Header = () => {
           <Image src={logo} alt="Logo" />
         </Link>
       </div>
-      <div className="hidden sm:block " >
+      <div className=" " >
         <ul className="flex gap-3" >
 
           {links.map(({ label, href }) => (
-            <Link key={randomUUID()} className="hover:text-primary" href={href}>
+            <Link key={randomUUID()} className="hover:text-primary hidden sm:block" href={href}>
               <li>
                 {label}
               </li>
