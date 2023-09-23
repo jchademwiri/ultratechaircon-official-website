@@ -1,4 +1,6 @@
-const links = [
+import { TLink } from "@/lib/types";
+
+const navLinks: TLink[] = [
     {
         label: "Home",
         href: '/'
@@ -16,4 +18,19 @@ const links = [
         href: '/'
     }
 ]
-export { links };
+
+const socialLinks: TLink[] = [
+    {
+        label: "Facebook",
+        href: '/'
+    },
+    {
+        label: "Twitter",
+        href: '/'
+    },
+    {
+        label: "About",
+        href: '/'
+    },
+]
+export { navLinks, socialLinks };
