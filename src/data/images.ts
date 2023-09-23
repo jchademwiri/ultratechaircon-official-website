@@ -5,12 +5,14 @@ import samsungLogo from '/public/samsung.png'
 import carrierLogo from '/public/carrier.svg'
 import kicLogo from '/public/kic.png'
 import hisenseLogo from '/public/hisense.svg'
+import { TPartnerLogo } from './lib/types'
 
 
 export { logo, lgLogo, whirlpoolLogo, samsungLogo }
 
 
-const partnerLogo = [
+
+const partnerLogo: TPartnerLogo[] = [
     {
         logo: lgLogo,
         alt: 'Lg Logo'
