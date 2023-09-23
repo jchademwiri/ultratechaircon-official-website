@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header className="flex justify-between max-w-7xl m-auto my-4 w-[90%] items-center">
       <div className="w-10 sm:w-14" >
-        <Image src={logo} alt="Logo" />
+        <Link href='/'>
+          <Image src={logo} alt="Logo" />
+        </Link>
       </div>
       <div className="hidden sm:block " >
         <ul className="flex gap-3" >
@@ -21,7 +23,7 @@ const Header = () => {
             </Link>
           ))}
           <li>
-            <Link href='/' className="px-4 py-2 bg-primary rounded-sm font-medium text-xl">0833961172</Link>
+            <Link href='/' className="px-4 py-2 bg-primary text-white rounded-sm font-medium text-xl">0833961172</Link>
           </li>
         </ul>
       </div>

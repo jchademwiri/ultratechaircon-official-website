@@ -3,7 +3,7 @@ import Card from "./Card"
 
 const HomeService = () => {
     return (
-        <section className="max-w-7xlmy-10 py-10 m-auto w-[90%]">
+        <section className="max-w-7xl my-5 py-5 m-auto w-[90%]">
             <div className="grid place-items-center text-center">
                 <h2 className="text-3xl font-semibold" >Air conditioning & refrigeration</h2>
                 <span className="h-[1px] w-28 bg-primary rounded-full my-4" ></span>

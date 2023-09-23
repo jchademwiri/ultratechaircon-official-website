@@ -1,15 +1,13 @@
-import Footer from '@/components/Footer'
-import './globals.css'
+import { Footer, Header } from '@/components';
 import type { Metadata } from 'next'
-import { Poppins, Open_Sans } from 'next/font/google'
-import Header from '@/components/Header'
+import { Open_Sans } from 'next/font/google'
+import './globals.css'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-openSans',
   weight: ['300', '400', '500', '600', '700', '800',]
-  // weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
 export const metadata: Metadata = {

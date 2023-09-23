@@ -1,18 +1,20 @@
 import logo from '/public/logo-icon.png'
 import lgLogo from '/public/lg.png'
 import whirlpoolLogo from '/public/whirlpool.png'
-import samsungLogo from '/public/samsung.png'
+import samsungLogo from '/public/samsung.svg'
 import carrierLogo from '/public/carrier.svg'
 import kicLogo from '/public/kic.png'
 import hisenseLogo from '/public/hisense.svg'
-import { TPartnerLogo } from './lib/types'
-
-
-export { logo, lgLogo, whirlpoolLogo, samsungLogo }
+import aircon from '/public/aircon-units.jpg'
+import { TLogo } from '@/lib/types'
 
 
 
-const partnerLogo: TPartnerLogo[] = [
+export { logo, aircon }
+
+
+
+const plogos: TLogo[] = [
     {
         logo: lgLogo,
         alt: 'Lg Logo'
@@ -23,7 +25,7 @@ const partnerLogo: TPartnerLogo[] = [
     },
     {
         logo: samsungLogo,
-        alt: 'Samusng Logo'
+        alt: 'Samusung Logo'
     },
     {
         logo: carrierLogo,
@@ -38,4 +40,4 @@ const partnerLogo: TPartnerLogo[] = [
         alt: 'Hisense Logo'
     }
 ]
-export { partnerLogo }
+export { plogos }
