@@ -1,4 +1,4 @@
-import { ChevronRight, Facebook, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { ChevronRight, Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import Link from "next/link"
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </section>
       <section className="bg-blue-950 text-white py-7">
-        <div className="grid sm:flex justify-between text-center items-center max-w-7xl m-auto w-[90%]">
+        <div className="grid sm:flex justify-between max-w-7xl m-auto w-[90%]">
           <ul className="flex gap-3">
             <li className="py-2">
               <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
@@ -44,13 +44,12 @@ const Footer = () => {
                 <Twitter size={20} /> Twitter
               </Link>
             </li>
-            {/* {socialLinks.map(({ label, href, icon }: TSocialLink) => (
-              <Link key={randomUUID()} className="hover:text-primary py-2" href={href}>
-                <li className="flex gap-1">
-                  {icon}   {label}
-                </li>
+
+            <li className="py-2">
+              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
+                <Linkedin size={20} /> Linkedin
               </Link>
-            ))} */}
+            </li>
           </ul>
           <div >
             Copyright © {year} - Developed by {' '}
@@ -58,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </footer>
+    </footer >
   )
 }
 export default Footer

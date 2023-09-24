@@ -14,7 +14,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon',
   description: 'Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.',
-  metadataBase: new URL('https://www.ultratechaircon.co.za'),
+  // metadataBase: new URL('https://www.ultratechaircon.co.za'),
   alternates: {
     canonical: '/',
   },
