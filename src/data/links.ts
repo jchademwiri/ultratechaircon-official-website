@@ -1,4 +1,5 @@
-import { TLink } from "@/lib/types";
+import { TLink, TSocialLink } from "@/lib/types";
+
 
 const navLinks: TLink[] = [
     {
@@ -19,18 +20,11 @@ const navLinks: TLink[] = [
     }
 ]
 
-const socialLinks: TLink[] = [
+const socialLinks = [
     {
         label: "Facebook",
-        href: '/'
-    },
-    {
-        label: "Twitter",
-        href: '/'
-    },
-    {
-        label: "About",
-        href: '/'
+        href: '/',
+        icon: 'Icon Placement'
     },
 ]
 export { navLinks, socialLinks };

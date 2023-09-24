@@ -1,13 +1,10 @@
-import { socialLinks } from "@/data/links";
-import { TLink } from "@/lib/types";
-import { randomUUID } from "crypto"
-import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import { ChevronRight, Facebook, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import Link from "next/link"
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="text-white">
+    <footer className="">
       <section className="py-5 gap-6 grid lg:grid-cols-3 md:grid-cols-2 max-w-7xl m-auto my-7 w-[90%]" >
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">ULTRATECH AIRCON</h3>
@@ -34,20 +31,30 @@ const Footer = () => {
             <Mail /> support@ultratechaircon.co.za</Link>
         </div>
       </section>
-      <section className="bg-blue-950">
+      <section className="bg-blue-950 text-white py-7">
         <div className="grid sm:flex justify-between text-center items-center max-w-7xl m-auto w-[90%]">
-          <ul className="flex gap-3 py-7">
-            {socialLinks.map(({ label, href }: TLink) => (
+          <ul className="flex gap-3">
+            <li className="py-2">
+              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
+                <Facebook size={20} /> Facebook
+              </Link>
+            </li>
+            <li className="py-2">
+              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
+                <Twitter size={20} /> Twitter
+              </Link>
+            </li>
+            {/* {socialLinks.map(({ label, href, icon }: TSocialLink) => (
               <Link key={randomUUID()} className="hover:text-primary py-2" href={href}>
-                <li>
-                  {label}
+                <li className="flex gap-1">
+                  {icon}   {label}
                 </li>
               </Link>
-            ))}
+            ))} */}
           </ul>
           <div >
-            Copyright © {year} by {' '}
-            <Link href={`/`} target="_blank" rel="noopener noreferrer" className="">Jacob Chademwiri</Link>
+            Copyright © {year} - Developed by {' '}
+            <Link href='https://www.jacobc.co.za/' target="_blank" rel="noopener noreferrer" className="">Jacob Chademwiri</Link>
           </div>
         </div>
       </section>

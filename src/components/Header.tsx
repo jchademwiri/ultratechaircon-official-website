@@ -24,7 +24,7 @@ const Header = () => {
             </Link>
           ))}
           <li>
-            <Link href='/' className="px-4 py-2 bg-primary text-white rounded-sm font-medium text-xl">0833961172</Link>
+            <Link href='/' className="px-4 py-2 hover:bg-primary tracking-wide  border hover:border-primary bg-transparent text-white rounded-sm font-medium text-xl">0833961172</Link>
           </li>
         </ul>
       </div>

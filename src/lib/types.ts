@@ -17,5 +17,12 @@ type TLink = {
     label: string;
     href: string;
 }
+type TSocialLink = {
+    icon: string;
+    label: string;
+    href: string;
+}
 
-export type { TCard, TLogo, TLink }
+
+
+export type { TCard, TLogo, TLink, TSocialLink }

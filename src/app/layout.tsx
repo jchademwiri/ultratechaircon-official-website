@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Footer, Header } from '@/components';
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
@@ -13,8 +14,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon',
   description: 'Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.',
+  metadataBase: new URL('https://www.ultratechaircon.co.za'),
   alternates: {
-    canonical: 'https://www.ultratechaircon.co.za',
+    canonical: '/',
   },
 
   openGraph: {
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
     url: 'https://www.ultratechaircon.co.za',
     locale: 'en_US',
     type: 'website',
+
   },
   category: 'technology',
   twitter: {
@@ -60,6 +63,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
