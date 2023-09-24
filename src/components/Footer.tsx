@@ -1,5 +1,6 @@
-import { ChevronRight, Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link"
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -9,6 +10,7 @@ const Footer = () => {
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">ULTRATECH AIRCON</h3>
           <p>Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and regassing, compressor replacement, PCB repairs and replacement. We also do overall repairs and performance assessment on air-conditioning units.</p>
+          <SocialIcons />
         </div>
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">OUR SERVICES</h3>
@@ -33,26 +35,9 @@ const Footer = () => {
       </section>
       <section className="bg-blue-950 text-white py-7">
         <div className="grid sm:flex justify-between max-w-7xl m-auto w-[90%]">
-          <ul className="flex gap-3">
-            <li className="py-2">
-              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
-                <Facebook size={20} /> Facebook
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
-                <Twitter size={20} /> Twitter
-              </Link>
-            </li>
-
-            <li className="py-2">
-              <Link href='/' target="_blank" rel="noopener noreferrer" className="flex gap-1">
-                <Linkedin size={20} /> Linkedin
-              </Link>
-            </li>
-          </ul>
+          <p> © Copyright {year} - Ultratech Aircon</p>
           <div >
-            Copyright © {year} - Developed by {' '}
+            Developed by {' '}
             <Link href='https://www.jacobc.co.za/' target="_blank" rel="noopener noreferrer" className="">Jacob Chademwiri</Link>
           </div>
         </div>

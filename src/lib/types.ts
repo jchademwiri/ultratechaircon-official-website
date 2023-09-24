@@ -7,6 +7,12 @@ type TCard = {
     desc: string;
 }
 
+type TService = {
+    picture: TLogo,
+    title: string,
+    desc: string
+    link: TButton
+}
 
 type TLogo = {
     logo: StaticImageData;
@@ -23,6 +29,11 @@ type TSocialLink = {
     href: string;
 }
 
+type TButton = {
+    href: string;
+    label: string;
+}
 
 
-export type { TCard, TLogo, TLink, TSocialLink }
+
+export type { TCard, TLogo, TLink, TSocialLink, TButton, TService }

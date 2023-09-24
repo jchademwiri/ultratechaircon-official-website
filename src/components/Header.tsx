@@ -1,9 +1,11 @@
 import { logo } from "@/data/images"
-import { navLinks } from "@/data/links"
+import { navLinks, whatsapp } from "@/data/links"
 import { TLink } from "@/lib/types"
 import { randomUUID } from "crypto"
 import Image from "next/image"
 import Link from "next/link"
+import { ButtonSolid } from "."
+
 
 const Header = () => {
   return (
@@ -24,7 +26,7 @@ const Header = () => {
             </Link>
           ))}
           <li>
-            <Link href='/' className="px-4 py-2 hover:bg-primary tracking-wide  border hover:border-primary bg-transparent text-white rounded-sm font-medium text-xl">0833961172</Link>
+            <ButtonSolid href={whatsapp} label="0833961172" />
           </li>
         </ul>
       </div>
