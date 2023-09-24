@@ -20,11 +20,13 @@ const navLinks: TLink[] = [
     }
 ]
 
-const socialLinks = [
+const socialLinks: TSocialLink[] = [
     {
         label: "Facebook",
         href: '/',
         icon: 'Icon Placement'
     },
 ]
-export { navLinks, socialLinks };
+
+const whatsapp = '/'
+export { navLinks, socialLinks, whatsapp };

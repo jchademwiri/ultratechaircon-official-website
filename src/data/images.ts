@@ -1,3 +1,4 @@
+import { TLogo } from '@/lib/types'
 import logo from '/public/logo-icon.png'
 import lgLogo from '/public/lg.png'
 import whirlpoolLogo from '/public/whirlpool.png'
@@ -5,12 +6,13 @@ import samsungLogo from '/public/samsung.svg'
 import carrierLogo from '/public/carrier.svg'
 import kicLogo from '/public/kic.png'
 import hisenseLogo from '/public/hisense.svg'
-import aircon from '/public/aircon-units.jpg'
-import { TLogo } from '@/lib/types'
+import airconImage from '/public/aircon-units.jpg'
+import repairsImage from '/public/repairs.jpg'
+import coldroomImage from '/public/hero.jpg'
 
 
 
-export { logo, aircon }
+export { logo, airconImage, repairsImage, coldroomImage }
 
 
 
