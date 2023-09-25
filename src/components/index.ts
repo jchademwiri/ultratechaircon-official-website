@@ -8,6 +8,7 @@ import CTABanner from "./CTABanner";
 import ServiceCard from "./ServiceCard";
 import { ButtonOutline, ButtonSolid } from "./Button";
 import ServiceBanner from "./ServiceBanner";
+import ContactBanner from "./ContactBanner";
 
 
-export { Header, Footer, HomeService, Partners, ServicesCTA, Hero, CTABanner, ServiceCard, ButtonOutline, ButtonSolid, ServiceBanner }
+export { Header, Footer, HomeService, Partners, ServicesCTA, Hero, CTABanner, ServiceCard, ButtonOutline, ButtonSolid, ServiceBanner, ContactBanner }
