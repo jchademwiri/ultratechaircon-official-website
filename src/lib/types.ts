@@ -11,7 +11,7 @@ type TService = {
     picture: TLogo,
     title: string,
     desc: string
-    link: TButton
+    link?: TButton
 }
 
 type TLogo = {
@@ -23,6 +23,7 @@ type TLink = {
     label: string;
     href: string;
 }
+
 type TSocialLink = {
     icon: string;
     label: string;

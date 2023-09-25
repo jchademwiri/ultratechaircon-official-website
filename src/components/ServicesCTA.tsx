@@ -10,9 +10,11 @@ const ServicesCTA = () => {
                 <div className="grid content-center p-10" >
                     <h3 className="text-2xl font-semibold my-2" >Ultratech Aircon</h3>
                     <span className="h-[1px] w-14 bg-primary rounded-full my-4" ></span>
-                    <p className="my-4" >Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette in Gauteng. Our services include refrigeration repairs and installation of cold rooms.</p>
+                    <p className="my-4" >
+                        Our goal is to provide our clients with the highest quality installation services, on schedule, and on budget along with outstanding customer service. We understand that time and cost need a balancing skills in order to deliver service that surpasses customer expectations.
+                    </p>
                     <p className="py-5" >
-                        <ButtonSolid href={whatsapp} label="View Services" />
+                        <ButtonSolid href='/services' label="View Services" />
                     </p>
                 </div>
                 <div>

@@ -25,20 +25,29 @@ const Footer = () => {
           <h3 className="uppercase text-primary py-2 font-semibold">CONTACT US</h3>
           <p className="py-2" >Air Conditioner Installation in Johannesburg & Pretoria</p>
           <address className="flex gap-2 py-1" >
-            <MapPin /> Glen Austin. Johannesburg. 1685
+            <MapPin /> Glen Austin, Johannesburg, 1685
           </address>
-          <p className="flex gap-2 py-1" >
-            <Phone /> 073 767 1328</p>
-          <Link href='mailto:support@ultratechaircon.co.za' className="flex gap-2 py-1" >
-            <Mail /> support@ultratechaircon.co.za</Link>
+          <Link href="tel:+27737671328"
+            className="flex gap-2 py-1" >
+            <Phone /> 073 767 1328
+          </Link>
+          <Link href='mailto:support@ultratechaircon.co.za'
+            className="flex gap-2 py-1" >
+            <Mail /> support@ultratechaircon.co.za
+          </Link>
         </div>
       </section>
       <section className="bg-blue-950 text-white py-7">
         <div className="grid sm:flex justify-between max-w-7xl m-auto w-[90%]">
-          <p> © Copyright {year} - Ultratech Aircon</p>
+          <p> © Copyright {year} - Ultratech Aircons</p>
           <div >
             Developed by {' '}
-            <Link href='https://www.jacobc.co.za/' target="_blank" rel="noopener noreferrer" className="">Jacob Chademwiri</Link>
+            <Link href='https://www.jacobc.co.za/'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="">
+              Jacob Chademwiri
+            </Link>
           </div>
         </div>
       </section>

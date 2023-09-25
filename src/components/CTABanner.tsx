@@ -1,6 +1,6 @@
-import Link from "next/link"
+import { ButtonOutline } from "."
 
-const Banner = () => {
+const CTABanner = () => {
     return (
         <section className="flex flex-col gap-5 justify-center py-10 max-h-[400px] text-white bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center position: relative">
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-blue-950 opacity-80 z-index: 1"></div>
@@ -10,12 +10,10 @@ const Banner = () => {
                 </h3>
                 <p className="my-4 text-lg text-center" >We offer free site inspection for industrial and commercial projects (terms apply). Get In Touch For Free Assistance.</p>
                 <p className="my-10">
-                    <Link href='/' className="px-4 py-2 tracking-wide  hover:bg-primary border hover:border-none text-white rounded-sm font-medium text-xl">
-                        Request Quote
-                    </Link>
+                    <ButtonOutline href="/" label="Request Quote" />
                 </p>
             </div>
         </section>
     )
 }
-export default Banner
+export default CTABanner
