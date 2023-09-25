@@ -8,7 +8,7 @@ const navLinks: TLink[] = [
     },
     {
         label: "Services",
-        href: '/'
+        href: '/services'
     },
     {
         label: "About",
