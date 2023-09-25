@@ -1,5 +1,5 @@
 import { logo } from "@/data/images"
-import { navLinks, whatsapp } from "@/data/links"
+import { navLinks } from "@/data/links"
 import { TLink } from "@/lib/types"
 import { randomUUID } from "crypto"
 import Image from "next/image"
@@ -26,7 +26,7 @@ const Header = () => {
             </Link>
           ))}
           <li>
-            <ButtonSolid href={whatsapp} label="0833961172" />
+            <ButtonSolid href='tel:+27737671328' label="0833961172" />
           </li>
         </ul>
       </div>

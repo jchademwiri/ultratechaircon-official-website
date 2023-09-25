@@ -1,5 +1,5 @@
 import { whatsapp } from "@/data/links"
-import { ButtonOutline } from "."
+import { ButtonSolid } from "."
 
 const Hero = () => {
     return (
@@ -12,7 +12,7 @@ const Hero = () => {
                     <span className="" >All repairs come with services guarantee </span>
                 </p>
                 <p className="my-5">
-                    <ButtonOutline href={whatsapp} label="Request Quote" />
+                    <ButtonSolid href={whatsapp} label="Request Quote" />
                 </p>
             </div>
         </section>

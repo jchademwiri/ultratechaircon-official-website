@@ -11,12 +11,8 @@ const navLinks: TLink[] = [
         href: '/services'
     },
     {
-        label: "About",
-        href: '/'
-    },
-    {
         label: "Contact Us",
-        href: '/'
+        href: '/contact'
     }
 ]
 
