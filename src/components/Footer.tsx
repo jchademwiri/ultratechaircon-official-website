@@ -5,8 +5,8 @@ import SocialIcons from "./SocialIcons";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="">
-      <section className="py-5 gap-6 grid lg:grid-cols-3 md:grid-cols-2 max-w-7xl m-auto my-7 w-[90%]" >
+    <footer className="bg-gray-800">
+      <section className="gap-6 grid lg:grid-cols-3 md:grid-cols-2 max-w-7xl m-auto py-10 w-[90%]" >
         <div>
           <h3 className="uppercase text-primary py-2 font-semibold">ULTRATECH AIRCON</h3>
           <p>Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and regassing, compressor replacement, PCB repairs and replacement. We also do overall repairs and performance assessment on air-conditioning units.</p>

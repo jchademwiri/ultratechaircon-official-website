@@ -1,3 +1,4 @@
+import { whatsapp } from "@/data/links"
 import { ButtonOutline } from "."
 
 const CTABanner = () => {
@@ -10,7 +11,7 @@ const CTABanner = () => {
                 </h3>
                 <p className="my-4 text-lg text-center" >We offer free site inspection for industrial and commercial projects (terms apply). Get In Touch For Free Assistance.</p>
                 <p className="my-10">
-                    <ButtonOutline href="/" label="Request Quote" />
+                    <ButtonOutline href={whatsapp} label="Request Quote" />
                 </p>
             </div>
         </section>

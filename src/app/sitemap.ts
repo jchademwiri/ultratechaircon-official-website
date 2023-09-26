@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-const domain = 'https://www.ultratechaircon.co.za/'
+const domain = 'https://www.ultratechaircon.co.za'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
