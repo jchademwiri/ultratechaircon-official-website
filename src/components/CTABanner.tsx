@@ -1,20 +1,20 @@
-import { whatsapp } from '@/data/links';
-import { ButtonOutline } from '.';
+import { whatsapp } from "@/data/links";
+import { ButtonOutline } from ".";
 
 const CTABanner = () => {
   return (
-    <section className="flex flex-col gap-5 justify-center py-10 max-h-[400px] text-white bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center position: relative">
-      <div className='absolute top-0 left-0 right-0 bottom-0 bg-blue-950 opacity-80 z-index: 1'></div>
-      <div className=' max-w-3xl m-auto w-[90%] text-center position: relative z-index: 2'>
-        <h3 className='text-3xl font-bold'>
+    <section className="position: relative flex max-h-[400px] flex-col justify-center gap-5 bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center py-10 text-white">
+      <div className="z-index: 1 absolute bottom-0 left-0 right-0 top-0 bg-blue-950 opacity-80"></div>
+      <div className=" position: z-index: 2 relative m-auto w-[90%] max-w-3xl text-center">
+        <h3 className="text-3xl font-bold">
           In Need of Commercial, Industrial Installation Services in Gauteng?
         </h3>
-        <p className='my-4 text-lg text-center'>
+        <p className="my-4 text-center text-lg">
           We offer free site inspection for industrial and commercial projects
           (terms apply). Get In Touch For Free Assistance.
         </p>
-        <div className='my-10'>
-          <ButtonOutline href={whatsapp} label='Request Quote' />
+        <div className="my-10">
+          <ButtonOutline href={whatsapp} label="Request Quote" />
         </div>
       </div>
     </section>

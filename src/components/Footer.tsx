@@ -1,14 +1,14 @@
-import { ChevronRight, Mail, MapPin, Phone } from 'lucide-react';
-import Link from 'next/link';
-import SocialIcons from './SocialIcons';
+import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className='bg-gray-800'>
-      <section className='gap-6 grid lg:grid-cols-3 md:grid-cols-2 max-w-7xl m-auto py-10 w-[90%]'>
+    <footer className="bg-gray-800">
+      <section className="m-auto grid w-[90%] max-w-7xl gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
         <div>
-          <h3 className='uppercase text-primary py-2 font-semibold'>
+          <h3 className="py-2 font-semibold uppercase text-primary">
             ULTRATECH AIRCON
           </h3>
           <p>
@@ -21,59 +21,59 @@ const Footer = () => {
           <SocialIcons />
         </div>
         <div>
-          <h3 className='uppercase text-primary py-2 font-semibold'>
+          <h3 className="py-2 font-semibold uppercase text-primary">
             OUR SERVICES
           </h3>
-          <ul className='grid gap-2 '>
-            <li className='flex border-b border-blue-200 py-1 items-center'>
-              {' '}
+          <ul className="grid gap-2 ">
+            <li className="flex items-center border-b border-blue-200 py-1">
+              {" "}
               <ChevronRight size={18} /> Aircon Installation
             </li>
-            <li className='flex border-b border-blue-200 py-1 items-center'>
-              {' '}
+            <li className="flex items-center border-b border-blue-200 py-1">
+              {" "}
               <ChevronRight size={18} /> AC Maintenance
             </li>
-            <li className='flex border-b border-blue-200 py-1 items-center'>
-              {' '}
+            <li className="flex items-center border-b border-blue-200 py-1">
+              {" "}
               <ChevronRight size={18} /> Refrigeration & Cold Rooms
             </li>
-            <li className='flex border-b border-blue-200 py-1 items-center'>
-              {' '}
+            <li className="flex items-center border-b border-blue-200 py-1">
+              {" "}
               <ChevronRight size={18} /> Air-conditioning Repairs
             </li>
           </ul>
         </div>
         <div>
-          <h3 className='uppercase text-primary py-2 font-semibold'>
+          <h3 className="py-2 font-semibold uppercase text-primary">
             CONTACT US
           </h3>
-          <p className='py-2'>
+          <p className="py-2">
             Air Conditioner Installation in Johannesburg & Pretoria
           </p>
-          <address className='flex gap-2 py-1'>
+          <address className="flex gap-2 py-1">
             <MapPin /> Glen Austin, Johannesburg, 1685
           </address>
-          <Link href='tel:+27737671328' className='flex gap-2 py-1'>
+          <Link href="tel:+27737671328" className="flex gap-2 py-1">
             <Phone /> 073 767 1328
           </Link>
           <Link
-            href='mailto:support@ultratechaircon.co.za'
-            className='flex gap-2 py-1'
+            href="mailto:support@ultratechaircon.co.za"
+            className="flex gap-2 py-1"
           >
             <Mail /> support@ultratechaircon.co.za
           </Link>
         </div>
       </section>
-      <section className='bg-blue-950 text-white py-7'>
-        <div className='grid sm:flex justify-between max-w-7xl m-auto w-[90%]'>
+      <section className="bg-blue-950 py-7 text-white">
+        <div className="m-auto grid w-[90%] max-w-7xl justify-between sm:flex">
           <p> © Copyright {year} - Ultratech Aircons</p>
           <div>
-            Developed by{' '}
+            Developed by{" "}
             <Link
-              href='https://www.jacobc.co.za/'
-              target='_blank'
-              rel='noopener noreferrer'
-              className=''
+              href="https://www.jacobc.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
             >
               Jacob Chademwiri
             </Link>

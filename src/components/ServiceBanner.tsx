@@ -11,9 +11,9 @@ const ServiceBanner = () => {
           Specialists in Installation & Repairs on all types of air-conditioning
           units including inverters, ducted and cassette in Gauteng.
         </p>
-        <p className='my-10'>
+        <div className='my-10'>
           <ButtonSolid href={whatsapp} label='Request Quote' />
-        </p>
+        </div>
       </div>
     </section>
   );
