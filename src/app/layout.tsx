@@ -1,34 +1,35 @@
 import { Analytics } from '@vercel/analytics/react';
 import { Footer, Header } from '@/components';
-import type { Metadata } from 'next'
-import { Open_Sans } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Open_Sans } from 'next/font/google';
+import './globals.css';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-openSans',
-  weight: ['300', '400', '500', '600', '700', '800',]
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ultratechaircon-official-website.vercel.app/'),
   title: 'Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon',
-  description: 'Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.',
+  description:
+    'Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.',
   alternates: {
     canonical: '/',
   },
 
   openGraph: {
-    title: 'Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon',
+    title:
+      'Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon',
     siteName: 'Ultra Tech Aircons',
     description:
-      "Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.",
+      'Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.',
     url: 'https://www.ultratechaircon.co.za',
     locale: 'en_US',
     type: 'website',
     images: '/airconditioning.jpg',
-
   },
   category: 'technology',
   twitter: {
@@ -36,7 +37,6 @@ export const metadata: Metadata = {
     creatorId: '1467726470533754880',
     siteId: '1467726470533754880',
     card: 'summary_large_image',
-
   },
   robots: {
     index: true,
@@ -51,15 +51,15 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={openSans.className}>
         <Header />
         {children}
@@ -67,5 +67,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  )
+  );
 }
