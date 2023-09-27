@@ -1,3 +1,4 @@
+import { v4 as uuid } from "uuid";
 import { TLink, TSocialLink } from "@/lib/types";
 
 
@@ -25,4 +26,6 @@ const socialLinks: TSocialLink[] = [
 ]
 
 const whatsapp = 'https://wa.me/message/N5EHXKJVMI7WM1'
-export { navLinks, socialLinks, whatsapp };
+
+
+export { navLinks, socialLinks, whatsapp, uuid };

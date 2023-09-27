@@ -5,9 +5,9 @@ import { plogos } from '@/data/images';
 
 const Partners = () => {
   return (
-    <section className='bg-blue-950 my-24'>
-      <div className='max-w-7xl py-5 m-auto w-[90%]'>
-        <div className='grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 '>
+    <section className="my-24 bg-blue-950">
+      <div className="m-auto w-[90%] max-w-7xl py-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6 ">
           {plogos.map(({ logo, alt }: TLogo) => (
             <PartnerLogo key={randomUUID()} logo={logo} alt={alt} />
           ))}
