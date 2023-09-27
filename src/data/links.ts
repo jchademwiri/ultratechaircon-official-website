@@ -5,15 +5,18 @@ import { TLink, TSocialLink } from "@/lib/types";
 const navLinks: TLink[] = [
     {
         label: "Home",
-        href: '/'
+        href: '/',
+        ariaLabel: 'Home Page of with Ultra Tech Aircons'
     },
     {
         label: "Services",
-        href: '/services'
+        href: '/services',
+        ariaLabel: 'Services Page of with Ultra Tech Aircons'
     },
     {
         label: "Contact Us",
-        href: '/contact'
+        href: '/contact',
+        ariaLabel: 'Contact Page of with Ultra Tech Aircons'
     }
 ]
 

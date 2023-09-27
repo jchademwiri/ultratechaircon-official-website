@@ -49,17 +49,13 @@ const Navbar = () => {
       >
         <div className="mx-auto flex h-full  w-[90%] max-w-7xl items-center justify-between">
           <div>
-            <Link
-              href="/"
-              aria-label="Contact with Ultra Tech Aircons"
-              passHref
-            >
+            <Link href="/" aria-label="Logo of Ultra Tech Aircons" passHref>
               <Image src={logo} alt="logo" className="h-10 w-full" />
             </Link>
           </div>
           <div>
             <ul className="hidden md:flex">
-              {navLinks.map(({ href, label }: TLink) => (
+              {navLinks.map(({ href, label, ariaLabel }: TLink) => (
                 <li key={uuid()} className="">
                   <Link
                     href={href}
@@ -69,7 +65,7 @@ const Navbar = () => {
                         ? "border-b-2 border-primary font-semibold text-primary"
                         : ""
                     } m-2 border-primary p-2 hover:border-b-2`}
-                    aria-label="Contact with Ultra Tech Aircons"
+                    aria-label={ariaLabel}
                   >
                     {label}
                   </Link>
@@ -138,13 +134,15 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col py-4">
               <ul className="">
-                {navLinks.map(({ href, label }: TLink) => (
+                {navLinks.map(({ href, label, ariaLabel }: TLink) => (
                   <li
                     key={uuid()}
                     onClick={() => setNav(false)}
                     className="py-4 text-sm font-semibold hover:text-accent"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link href={href} aria-label={ariaLabel}>
+                      {label}
+                    </Link>
                   </li>
                 ))}
               </ul>

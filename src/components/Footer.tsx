@@ -53,12 +53,17 @@ const Footer = () => {
           <address className="flex gap-2 py-1">
             <MapPin /> Glen Austin, Johannesburg, 1685
           </address>
-          <Link href="tel:+27737671328" className="flex gap-2 py-1">
+          <Link
+            href="tel:+27737671328"
+            className="flex gap-2 py-1"
+            aria-label="Call us on mobile"
+          >
             <Phone /> 073 767 1328
           </Link>
           <Link
             href="mailto:support@ultratechaircon.co.za"
             className="flex gap-2 py-1"
+            aria-label="email us today"
           >
             <Mail /> support@ultratechaircon.co.za
           </Link>
@@ -74,6 +79,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className=""
+              aria-label="Read more about our developer"
             >
               Jacob Chademwiri
             </Link>
