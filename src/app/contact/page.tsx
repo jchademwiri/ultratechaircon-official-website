@@ -6,7 +6,7 @@ const Contact = () => {
     <main>
       <ContactBanner />
       <section className="m-auto my-7 grid w-[90%] max-w-7xl gap-4 py-5 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm bg-primary/10 p-6 ">
+        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6 ">
           <p>
             {" "}
             <Phone size={50} />
@@ -14,7 +14,7 @@ const Contact = () => {
           <p className="my-7">083 396 1172</p>
           <ButtonOutline href="tel:+27737671328" label="Call Us Now" />
         </div>
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm bg-primary/10 p-6">
+        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6">
           <p>
             {" "}
             <Mail size={50} />
@@ -25,7 +25,7 @@ const Contact = () => {
             label="Email Us Now"
           />
         </div>
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm bg-primary/10 p-6">
+        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6">
           <p>
             <Navigation size={50} />
           </p>
