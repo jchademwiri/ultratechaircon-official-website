@@ -16,11 +16,12 @@ const Header = () => {
       </div>
       <div className=" ">
         <ul className="flex gap-3">
-          {navLinks.map(({ label, href }: TLink) => (
+          {navLinks.map(({ label, href, ariaLabel }: TLink) => (
             <Link
               key={randomUUID()}
               className="hidden hover:text-primary sm:block"
               href={href}
+              aria-label={ariaLabel}
             >
               <li>{label}</li>
             </Link>
