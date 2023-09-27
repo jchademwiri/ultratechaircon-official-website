@@ -5,7 +5,7 @@ import SocialIcons from "./SocialIcons";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-gray-800">
+    <footer className="bg-gray-800 text-white">
       <section className="m-auto grid w-[90%] max-w-7xl gap-6 py-10 md:grid-cols-2 lg:grid-cols-3">
         <div>
           <h3 className="py-2 font-semibold uppercase text-primary">
