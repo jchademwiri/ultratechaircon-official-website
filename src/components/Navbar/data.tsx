@@ -1,16 +1,6 @@
-import { TLink } from "@/lib/types";
 import { Linkedin, Mail, Phone } from "lucide-react";
 
-export const links: TLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Projects", href: "/projects" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
-
-export const icons = [
+const icons = [
   {
     name: "WhatsApp",
     link: "https://wa.me/message/N5EHXKJVMI7WM1",
@@ -29,3 +19,5 @@ export const icons = [
     icon: <Linkedin />,
   },
 ];
+
+export { icons };

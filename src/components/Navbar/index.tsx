@@ -10,8 +10,6 @@ import { TLink } from "@/lib/types";
 import { navLinks, uuid } from "@/data/links";
 import { ButtonSolid } from "..";
 
-// const logo = 'Sithembe';
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
