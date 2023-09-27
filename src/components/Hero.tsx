@@ -3,7 +3,7 @@ import { ButtonSolid } from ".";
 
 const Hero = () => {
   return (
-    <section className="position: relative flex h-[500px] flex-col justify-center gap-5 bg-blue-800 bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center py-20 text-white">
+    <section className="position: relative flex h-[600px] flex-col justify-center gap-5 bg-blue-800 bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center py-20 text-white">
       <div className="z-index: 1 absolute bottom-0 left-0 right-0 top-0 bg-blue-950 opacity-70"></div>
       <div className=" position: z-index: 2 relative m-auto w-[90%] max-w-7xl text-center">
         <h1 className="text-6xl font-bold">Air conditioner Instalation</h1>

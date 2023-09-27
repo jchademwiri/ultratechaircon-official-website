@@ -1,4 +1,4 @@
-import { TCard } from '@/lib/types';
+import { TCard } from "@/lib/types";
 
 const Card = ({ icon, title, desc }: TCard) => {
   return (

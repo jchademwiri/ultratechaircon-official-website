@@ -1,5 +1,5 @@
-import { TLogo } from '@/lib/types';
-import Image from 'next/image';
+import { TLogo } from "@/lib/types";
+import Image from "next/image";
 
 const PartnerLogo = ({ logo, alt }: TLogo) => {
   return (

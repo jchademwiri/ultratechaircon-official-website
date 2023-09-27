@@ -1,7 +1,6 @@
-import { airconImage } from '@/data/images';
-import Image from 'next/image';
-import { ButtonSolid } from '.';
-import { whatsapp } from '@/data/links';
+import { airconImage } from "@/data/images";
+import Image from "next/image";
+import { ButtonOutline } from ".";
 
 const ServicesCTA = () => {
   return (
@@ -17,7 +16,7 @@ const ServicesCTA = () => {
             a balancing skills in order to deliver service that surpasses
             customer expectations.
           </p>
-          <ButtonSolid href="/services" label="View Services" />
+          <ButtonOutline href="/services" label="View Services" />
         </div>
         <div>
           <Image

@@ -1,5 +1,5 @@
 import { whatsapp } from "@/data/links";
-import { ButtonOutline } from ".";
+import { ButtonSolid } from ".";
 
 const CTABanner = () => {
   return (
@@ -14,7 +14,7 @@ const CTABanner = () => {
           (terms apply). Get In Touch For Free Assistance.
         </p>
         <div className="my-10">
-          <ButtonOutline href={whatsapp} label="Request Quote" />
+          <ButtonSolid href={whatsapp} label="Request Quote" />
         </div>
       </div>
     </section>
