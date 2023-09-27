@@ -43,8 +43,8 @@ const Navbar = () => {
         style={{ backgroundColor: `${navBg}` }}
         className={
           shadow
-            ? "shadow-accent fixed top-0 z-[100] h-20 w-full shadow-sm"
-            : "fixed top-0 z-[100] h-20 w-full bg-transparent"
+            ? "fixed top-0 z-[100] h-20 w-full text-white shadow-sm shadow-accent"
+            : "fixed top-0 z-[100] h-20 w-full bg-transparent text-white"
         }
       >
         <div className="mx-auto flex h-full  w-[90%] max-w-7xl items-center justify-between">
@@ -100,14 +100,14 @@ const Navbar = () => {
           onClick={() => setNav(false)}
           className={
             nav
-              ? "bg-accent/70 fixed left-0 top-0 h-screen w-full md:hidden"
+              ? "fixed left-0 top-0 h-screen w-full bg-accent/70 md:hidden"
               : ""
           }
         >
           <div
             className={
               nav
-                ? " bg-accent/90 text-body fixed left-0 top-0 h-screen p-10 duration-500 ease-in md:w-[70%]"
+                ? " text-body fixed left-0 top-0 h-screen bg-accent/90 p-10 duration-500 ease-in md:w-[70%]"
                 : "fixed left-[-150%] top-0 p-10 duration-500 ease-in"
             }
           >
@@ -129,7 +129,7 @@ const Navbar = () => {
                   <X />
                 </div>
               </div>
-              <div className="border-accent my-4 border-b">
+              <div className="my-4 border-b border-accent">
                 <p className="py-4 ">
                   We give you the right temparature on the right time always.
                 </p>
@@ -142,7 +142,7 @@ const Navbar = () => {
                   <li
                     key={uuid()}
                     onClick={() => setNav(false)}
-                    className="hover:text-accent py-4 text-sm font-semibold"
+                    className="py-4 text-sm font-semibold hover:text-accent"
                   >
                     <Link href={href}>{label}</Link>
                   </li>
