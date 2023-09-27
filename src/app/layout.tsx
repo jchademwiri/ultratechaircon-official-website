@@ -13,7 +13,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ultratechaircon-official-website.vercel.app/"),
+  metadataBase: new URL("https://www.ultratechaircon.co.za"),
   title: "Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon",
   description:
     "Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.",
