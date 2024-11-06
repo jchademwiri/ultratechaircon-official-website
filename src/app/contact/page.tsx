@@ -11,8 +11,8 @@ const Contact = () => {
             {" "}
             <Phone size={50} />
           </p>
-          <p className="my-7">083 396 1172</p>
-          <ButtonOutline href="tel:+27737671328" label="Call Us Now" />
+          <p className="my-7">069 358 1046</p>
+          <ButtonOutline href="tel:+27693581046" label="Call Us Now" />
         </div>
         <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6">
           <p>
