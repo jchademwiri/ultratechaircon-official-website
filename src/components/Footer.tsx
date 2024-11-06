@@ -54,11 +54,11 @@ const Footer = () => {
             <MapPin /> Glen Austin, Johannesburg, 1685
           </address>
           <Link
-            href="tel:+27737671328"
+            href="tel:+27693581046"
             className="flex gap-2 py-1"
             aria-label="Call us on mobile"
           >
-            <Phone /> 073 767 1328
+            <Phone /> 069 358 1046
           </Link>
           <Link
             href="mailto:support@ultratechaircon.co.za"
