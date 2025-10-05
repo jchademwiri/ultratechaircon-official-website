@@ -61,17 +61,17 @@ const Footer = () => {
             <Phone /> 073 767 1328 
           </Link>
           <Link
-            href="mailto:support@ultratechaircon.co.za"
+            href="mailto:learndanika36@gmail.com"
             className="flex gap-2 py-1"
             aria-label="email us today"
           >
-            <Mail /> support@ultratechaircon.co.za
+            <Mail /> learndanika36@gmail.com
           </Link>
         </div>
       </section>
       <section className="bg-blue-950 py-7 text-white">
         <div className="m-auto grid w-[90%] max-w-7xl justify-between sm:flex">
-          <p> © Copyright {year} - Ultratech Aircons</p>
+          <p> © Copyright {new Date().getFullYear()} - Ultratech Aircons</p>
           <div>
             Developed by{" "}
             <Link
