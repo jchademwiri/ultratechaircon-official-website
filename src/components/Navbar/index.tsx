@@ -72,7 +72,7 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <ButtonSolid href="tel:+27693581046" label="069 358 1046" />
+                <ButtonSolid href="tel:+27737671328 " label="073 767 1328 " />
               </li>
             </ul>
             <div onClick={handleNav} className="cursor-pointer md:hidden">
