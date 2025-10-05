@@ -25,19 +25,19 @@ const Footer = () => {
             OUR SERVICES
           </h3>
           <ul className="grid gap-2 ">
-            <li className="flex items-center border-b border-blue-200 py-1">
+            <li className="flex items-center border-b border-blue-200/20 py-1">
               {" "}
               <ChevronRight size={18} /> Aircon Installation
             </li>
-            <li className="flex items-center border-b border-blue-200 py-1">
+            <li className="flex items-center border-b border-blue-200/20 py-1">
               {" "}
               <ChevronRight size={18} /> AC Maintenance
             </li>
-            <li className="flex items-center border-b border-blue-200 py-1">
+            <li className="flex items-center border-b border-blue-200/20 py-1">
               {" "}
               <ChevronRight size={18} /> Refrigeration & Cold Rooms
             </li>
-            <li className="flex items-center border-b border-blue-200 py-1">
+            <li className="flex items-center border-b border-blue-200/20 py-1">
               {" "}
               <ChevronRight size={18} /> Air-conditioning Repairs
             </li>
@@ -48,17 +48,17 @@ const Footer = () => {
             CONTACT US
           </h3>
           <p className="py-2">
-            Air Conditioner Installation in Johannesburg & Pretoria
+            Air Conditioner Installation in Cape Town, Johannesburg & Pretoria
           </p>
           <address className="flex gap-2 py-1">
-            <MapPin /> Glen Austin, Johannesburg, 1685
+            <MapPin /> 195 Durban road beville Capetown
           </address>
           <Link
-            href="tel:+27693581046"
+            href="tel:+27737671328 "
             className="flex gap-2 py-1"
             aria-label="Call us on mobile"
           >
-            <Phone /> 069 358 1046
+            <Phone /> 073 767 1328 
           </Link>
           <Link
             href="mailto:support@ultratechaircon.co.za"
