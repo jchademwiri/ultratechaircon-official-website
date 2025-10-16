@@ -19,9 +19,9 @@ const Contact = () => {
             {" "}
             <Mail size={50} />
           </p>
-          <p className="my-7">learndanika36@gmail.com</p>
+          <p className="my-7">muchenutatenda@gmail.com</p>
           <ButtonOutline
-            href="mailto:learndanika36@gmail.com"
+            href="mailto:muchenutatenda@gmail.com"
             label="Email Us Now"
           />
         </div>

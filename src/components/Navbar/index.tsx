@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="mx-auto flex h-full  w-[90%] max-w-7xl items-center justify-between">
           <div>
             <Link href="/" aria-label="Logo of Ultra Tech Aircons" passHref>
-              <Image src={logo} alt="logo" className="h-10 w-full" />
+              <Image src={logo} alt="logo" width={40} height={100} className="h-40 w-auto" />
             </Link>
           </div>
           <div>
@@ -115,7 +115,7 @@ const Navbar = () => {
                     passHref
                     aria-label="Contact with Ultra Tech Aircons"
                   >
-                    <Image src={logo} alt="stp logo" className="h-14 w-full" />
+                    <Image src={logo} alt="logo" width={56} height={100} className="h-40 w-auto" />
                   </Link>
                 </div>
                 <div
@@ -151,7 +151,7 @@ const Navbar = () => {
 
                 <div className="flex w-full items-center gap-5 py-4  sm:w-[80%]">
                   {icons.map(({ link, icon }) => (
-                    <a
+                    <Link
                       key={uuid()}
                       href={link}
                       target="_blank"
@@ -160,7 +160,7 @@ const Navbar = () => {
                       aria-label="Contact with Ultra Tech Aircons"
                     >
                       {icon}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
