@@ -1,45 +1,37 @@
 import { TLogo } from '@/lib/types'
-import logo from '/public/logo-icon.png'
-import lgLogo from '/public/lg.png'
-import whirlpoolLogo from '/public/whirlpool.png'
-import samsungLogo from '/public/samsung.svg'
-import carrierLogo from '/public/carrier.svg'
-import kicLogo from '/public/kic.png'
-import hisenseLogo from '/public/hisense.svg'
-import airconImage from '/public/aircon-units.jpg'
-import repairsImage from '/public/repairs.jpg'
-import coldroomImage from '/public/hero.jpg'
 
-
-
-export { logo, airconImage, repairsImage, coldroomImage }
-
-
+// For images in public folder, just reference the path as a string
+// Next.js serves everything in public from the root URL
+export const logo = '/logo.svg'
+export const airconImage = '/aircon-units.jpg'
+export const repairsImage = '/repairs.jpg'
+export const coldroomImage = '/hero.jpg'
 
 const plogos: TLogo[] = [
     {
-        logo: lgLogo,
-        alt: 'Lg Logo'
+        logo: '/lg.png',
+        alt: 'LG Logo'
     },
     {
-        logo: whirlpoolLogo,
-        alt: 'whril Logo'
+        logo: '/whirlpool.png',
+        alt: 'Whirlpool Logo'
     },
     {
-        logo: samsungLogo,
-        alt: 'Samusung Logo'
+        logo: '/samsung.svg',
+        alt: 'Samsung Logo'
     },
     {
-        logo: carrierLogo,
+        logo: '/carrier.svg',
         alt: 'Carrier Logo'
     },
     {
-        logo: kicLogo,
+        logo: '/kic.png',
         alt: 'KIC Logo'
     },
     {
-        logo: hisenseLogo,
+        logo: '/hisense.svg',
         alt: 'Hisense Logo'
     }
 ]
+
 export { plogos }

@@ -61,11 +61,11 @@ const Footer = () => {
             <Phone /> 073 767 1328 
           </Link>
           <Link
-            href="mailto:learndanika36@gmail.com"
+            href="mailto:muchenutatenda@gmail.com"
             className="flex gap-2 py-1"
             aria-label="email us today"
           >
-            <Mail /> learndanika36@gmail.com
+            <Mail /> muchenutatenda@gmail.com
           </Link>
         </div>
       </section>

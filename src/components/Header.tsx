@@ -11,7 +11,7 @@ const Header = () => {
     <header className="m-auto my-4 flex w-[90%] max-w-7xl items-center justify-between">
       <div className="w-10 sm:w-14">
         <Link href="/">
-          <Image src={logo} alt="Logo" />
+          <Image src={logo} alt="Logo" width={56} height={56} />
         </Link>
       </div>
       <div className=" ">

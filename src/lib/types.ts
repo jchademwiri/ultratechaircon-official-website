@@ -15,7 +15,7 @@ type TService = {
 };
 
 type TLogo = {
-  logo: StaticImageData;
+  logo: StaticImageData | string;
   alt: string;
 };
 
