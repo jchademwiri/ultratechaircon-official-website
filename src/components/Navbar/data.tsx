@@ -3,7 +3,7 @@ import { Linkedin, Mail, Phone } from "lucide-react";
 const icons = [
   {
     name: "WhatsApp",
-    link: "https://wa.me/message/N5EHXKJVMI7WM1",
+    link: "https://wa.me/message/DIVHUUSEUOYQE1",
     icon: <Phone />,
   },
 

@@ -28,7 +28,7 @@ const socialLinks: TSocialLink[] = [
     },
 ]
 
-const whatsapp = 'https://wa.me/message/N5EHXKJVMI7WM1'
+const whatsapp = 'https://wa.me/message/DIVHUUSEUOYQE1'
 
 
 export { navLinks, socialLinks, whatsapp, uuid };
