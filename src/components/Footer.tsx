@@ -48,10 +48,10 @@ const Footer = () => {
             CONTACT US
           </h3>
           <p className="py-2">
-            Air Conditioner Installation in Cape Town, Johannesburg & Pretoria
+            Air Conditioner Installation in Cape Town
           </p>
           <address className="flex gap-2 py-1">
-            <MapPin /> 195 Durban road beville Capetown
+            <MapPin /> Capetown
           </address>
           <Link
             href="tel:+27737671328 "

@@ -9,7 +9,7 @@ const ServiceBanner = () => {
         <h2 className="text-3xl font-bold">Our Services</h2>
         <p className="my-4 text-center text-lg">
           Specialists in Installation & Repairs on all types of air-conditioning
-          units including inverters, ducted and cassette in Gauteng.
+          units including inverters, ducted and cassette in Cape Town.
         </p>
         <div className="my-10">
           <ButtonSolid href={whatsapp} label="Request Quote" />
