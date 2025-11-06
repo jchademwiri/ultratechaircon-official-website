@@ -7,7 +7,7 @@ const CTABanner = () => {
       <div className="z-index: 1 absolute bottom-0 left-0 right-0 top-0 bg-blue-950 opacity-80"></div>
       <div className=" position: z-index: 2 relative m-auto w-[90%] max-w-3xl text-center">
         <h3 className="text-3xl font-bold">
-          In Need of Commercial, Industrial Installation Services in Gauteng?
+          In Need of Commercial, Industrial Installation Services in Cape Town?
         </h3>
         <p className="my-4 text-center text-lg">
           We offer free site inspection for industrial and commercial projects

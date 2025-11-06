@@ -29,7 +29,7 @@ const Contact = () => {
           <p>
             <Navigation size={50} />
           </p>
-          <p className="my-7"> Glen Austin. Johannesburg. 1685</p>
+          <p className="my-7"> Cape Town</p>
 
           <ButtonOutline
             href="https://maps.app.goo.gl/NRzi6qjm9dWDpii68"

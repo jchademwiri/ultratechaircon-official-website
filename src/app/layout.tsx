@@ -15,19 +15,19 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ultratechaircon.co.za"),
-  title: "Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon",
+  title: "Air conditioner Installation & Repairs in Cape Town - Ultratech Aircon",
   description:
-    "Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.",
+    "Air conditioning installation, repairs, maintenance and refrigeration services around Cape Town. Get a free estimate to day. Service guarantee.",
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
     title:
-      "Air conditioner Installation & Repairs in Gauteng - Ultratech Aircon",
+      "Air conditioner Installation & Repairs in Cape Town - Ultratech Aircon",
     siteName: "Ultra Tech Aircons",
     description:
-      "Air conditioning installation, repairs, maintenance and refrigeration services Johannesburg. Get a free estimate to day. Service guarantee.",
+      "Air conditioning installation, repairs, maintenance and refrigeration services around Cape Town. Get a free estimate to day. Service guarantee.",
     url: "https://www.ultratechaircon.co.za",
     locale: "en_US",
     type: "website",
