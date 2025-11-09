@@ -8,12 +8,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
   
   const services = [
-    { name: "Aircon Installation", href: "/services/installation" },
-    { name: "AC Maintenance", href: "/services/maintenance" },
-    { name: "Refrigeration & Cold Rooms", href: "/services/refrigeration" },
-    { name: "Air-conditioning Repairs", href: "/services/repairs" },
-    { name: "Emergency AC Service", href: "/services/emergency" },
-    { name: "Commercial HVAC", href: "/services/commercial" }
+    { name: "Aircon Installation", href: "/services" },
+    { name: "AC Maintenance", href: "/services" },
+    { name: "Refrigeration & Cold Rooms", href: "/services" },
+    { name: "Air-conditioning Repairs", href: "/services" },
+    { name: "Emergency AC Service", href: "/services" },
+    { name: "Commercial HVAC", href: "/services" }
   ];
 
   const quickLinks = [
@@ -21,8 +21,8 @@ const Footer = () => {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
-    { name: "Request Quote", href: "/quote" },
-    { name: "FAQ", href: "/faq" }
+    { name: "Request Quote", href: "/contact" },
+    // { name: "FAQ", href: "/faq" }
   ];
 
   const trustBadges = [
