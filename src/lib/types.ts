@@ -4,7 +4,7 @@ import { ReactElement } from "react";
 type TCard = {
   icon: ReactElement;
   title: string;
-  desc: string;
+  description: string;
 };
 
 type TService = {
@@ -34,6 +34,7 @@ type TSocialLink = {
 type TButton = {
   href: string;
   label: string;
+  icon?: ReactElement;
 };
 
 export type { TCard, TLogo, TLink, TSocialLink, TButton, TService };

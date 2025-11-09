@@ -8,6 +8,8 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
       <Image
         src={picture.logo}
         alt={picture.alt}
+        width={400}
+        height={240}
         className='w-full h-60 object-cover'
       />
       <h2 className='text-2xl font-medium py-2'>{title}</h2>
