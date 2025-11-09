@@ -16,19 +16,19 @@ const HomeService = () => {
                             <Cog className="text-primary" size={50} />
                         }
                         title="Air Conditioners Installation"
-                        desc="Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and re-gassing, compressor replacement." />
+                        description="Installation & Repairs on all types of air-conditioning units including inverters, ducted and cassette. Our repairs services including leak repairs and re-gassing, compressor replacement." />
                     <Card
                         icon={
                             <Wrench className="text-primary" size={50} />
                         }
                         title="Aircon Repair Services"
-                        desc="We handle all common faults in air-conditioning, which include aircon not cooling aircon not running, aircon tripping, aircon reporting error code, aircon dripping water and noise." />
+                        description="We handle all common faults in air-conditioning, which include aircon not cooling aircon not running, aircon tripping, aircon reporting error code, aircon dripping water and noise." />
                     <Card
                         icon={
                             <ThermometerSnowflake className="text-primary" size={50} />
                         }
                         title="Refrigeration & Coldroom Services"
-                        desc="Fridges repairs & installation of cold rooms, chillers and mortuaries. We handle repairs for domestic, commercial and industrial refrigeration equipment onsite and off site." />
+                        description="Fridges repairs & installation of cold rooms, chillers and mortuaries. We handle repairs for domestic, commercial and industrial refrigeration equipment onsite and off site." />
                 </div>
             </section>
         </section>
