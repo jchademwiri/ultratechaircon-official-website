@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, Phone, Mail, Clock, MapPin, CheckCircle } from 'lucide-react';
 import { ButtonOutline, ButtonSolid } from './Button';
+import Link from 'next/link';
 
 interface ContactMethodProps {
   icon: React.ReactNode;
@@ -18,7 +19,7 @@ const ContactMethod = ({ icon, title, value, href, accent }: ContactMethodProps)
   };
 
   return (
-    <a
+    <Link
       href={href}
       className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-white/30"
     >
@@ -43,7 +44,7 @@ const ContactMethod = ({ icon, title, value, href, accent }: ContactMethodProps)
           </svg>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
@@ -96,7 +97,7 @@ const ContactBanner = () => {
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-500/20 px-6 py-2 text-sm font-semibold text-green-300 backdrop-blur-sm">
             <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-            <span>We're Available 24/7</span>
+            <span>We&apos;re Available 24/7</span>
           </div>
 
           {/* Headline */}

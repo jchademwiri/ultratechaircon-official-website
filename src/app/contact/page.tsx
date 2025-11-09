@@ -1,42 +1,12 @@
 import { ButtonOutline, ContactBanner } from "@/components";
 import { Mail, Navigation, Phone } from "lucide-react";
+import ContactSection from "./contact-section";
 
 const Contact = () => {
   return (
     <main>
       <ContactBanner />
-      <section className="m-auto my-7 grid w-[90%] max-w-7xl gap-4 py-5 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6 ">
-          <p>
-            {" "}
-            <Phone size={50} />
-          </p>
-          <p className="my-7">073 767 1328 </p>
-          <ButtonOutline href="tel:+27737671328 " label="Call Us Now" />
-        </div>
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6">
-          <p>
-            {" "}
-            <Mail size={50} />
-          </p>
-          <p className="my-7">muchenutatenda@gmail.com</p>
-          <ButtonOutline
-            href="mailto:muchenutatenda@gmail.com"
-            label="Email Us Now"
-          />
-        </div>
-        <div className="grid min-h-[250px] place-items-center content-center rounded-sm border border-primary bg-primary/10 p-6">
-          <p>
-            <Navigation size={50} />
-          </p>
-          <p className="my-7"> Cape Town</p>
-
-          <ButtonOutline
-            href="https://maps.app.goo.gl/NRzi6qjm9dWDpii68"
-            label="Get Directions"
-          />
-        </div>
-      </section>
+    <ContactSection/>
     </main>
   );
 };
