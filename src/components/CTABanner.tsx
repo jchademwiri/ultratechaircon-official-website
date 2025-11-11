@@ -1,4 +1,4 @@
-import { whatsapp } from "@/data/links";
+import { appMessage } from "@/data/links";
 import { ButtonSolid } from ".";
 
 const CTABanner = () => {
@@ -14,7 +14,7 @@ const CTABanner = () => {
           (terms apply). Get In Touch For Free Assistance.
         </p>
         <div className="my-10">
-          <ButtonSolid href={whatsapp} label="Request Quote" />
+          <ButtonSolid url={appMessage} label="Request Quote" />
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const ServicesCTA = () => {
             a balancing skills in order to deliver service that surpasses
             customer expectations.
           </p>
-          <ButtonOutline href="/services" label="View Services" />
+          <ButtonOutline url="/services" label="View Services" />
         </div>
         <div>
           <Image
