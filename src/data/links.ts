@@ -29,6 +29,7 @@ const socialLinks: TSocialLink[] = [
 ]
 
 const whatsapp = 'https://wa.me/message/DIVHUUSEUOYQE1'
+const appMessage = 'https://wa.me/27737671328?text=Hi, I\'d like to request a quote for AC services'
 
 
-export { navLinks, socialLinks, whatsapp, uuid };
+export { navLinks, socialLinks, whatsapp, appMessage, uuid };

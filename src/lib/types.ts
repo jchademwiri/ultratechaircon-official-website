@@ -32,7 +32,7 @@ type TSocialLink = {
 };
 
 type TButton = {
-  href: string;
+  url: string;
   label: string;
   icon?: ReactElement;
 };

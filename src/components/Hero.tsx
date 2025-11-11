@@ -1,3 +1,4 @@
+import { whatsapp } from "@/data/links";
 import { ButtonOutline, ButtonSolid } from "./Button";
 
 const Hero = () => {
@@ -48,10 +49,10 @@ const Hero = () => {
         </div>
 
         {/* CTA buttons - more prominent */}
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <ButtonSolid href="https://wa.me/1234567890" label="Get Free Quote" />
-          <ButtonOutline href="#services" label="Our Services" />
-        </div>
+<div className="flex flex-wrap items-center justify-center gap-4">
+  <ButtonSolid url={whatsapp} label="Get Free Quote" />
+  <ButtonOutline url="/services" label="Our Services" />
+</div>
 
         {/* Social proof */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm opacity-90">

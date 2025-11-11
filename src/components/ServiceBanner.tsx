@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, MessageCircle, Wrench, Snowflake, Shield, Clock } from 'lucide-react';
 import { ButtonSolid } from './Button';
 import { TCard } from '@/lib/types';
+import { appMessage } from '@/data/links';
 
 
 
@@ -103,18 +104,18 @@ const ServiceBanner = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <ButtonSolid 
-              href="https://wa.me/27737671328?text=Hi, I'd like to request a quote for AC services" 
-              label="WhatsApp Quote" 
-              icon={<MessageCircle className="h-5 w-5" />}
-            />
-            <ButtonSolid 
-              href="tel:+27737671328" 
-              label="Call 073 767 1328" 
-              icon={<Phone className="h-5 w-5" />}
-            />
-          </div>
+<div className="flex flex-wrap items-center justify-center gap-4">
+  <ButtonSolid 
+    url={appMessage} 
+    label="WhatsApp Quote" 
+    icon={<MessageCircle className="h-5 w-5" />}
+  />
+  <ButtonSolid 
+    url="tel:+27737671328" 
+    label="Call 073 767 1328" 
+    icon={<Phone className="h-5 w-5" />}
+  />
+</div>
 
           {/* Trust badges */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 border-t border-white/10 pt-8 text-center">

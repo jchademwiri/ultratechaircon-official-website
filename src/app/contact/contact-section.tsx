@@ -8,14 +8,14 @@ interface ContactCardProps {
   title: string;
   value: string;
   description?: string;
-  href: string;
+  url: string;
   buttonLabel: string;
 }
 
-const ContactCard = ({ icon, title, value, description, href, buttonLabel }: ContactCardProps) => {
+const ContactCard = ({ icon, title, value, description, url, buttonLabel }: ContactCardProps) => {
   return (
     <Link
-      href={href}
+      href={url}
       className="group relative overflow-hidden rounded-lg border border-blue-600/30 bg-gradient-to-br from-blue-600/20 to-blue-600/10 p-8 transition-all duration-500 hover:scale-105 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/20"
     >
       {/* Decorative corner gradient */}
@@ -45,7 +45,7 @@ const ContactCard = ({ icon, title, value, description, href, buttonLabel }: Con
         )}
 
         {/* Button */}
-        <ButtonOutline href={href} label={buttonLabel} />
+        <ButtonOutline url={url} label={buttonLabel} />
       </div>
     </Link>
   );
@@ -91,7 +91,7 @@ const ContactSection = () => {
               title={method.title}
               value={method.value}
               description={method.description}
-              href={method.href}
+              url={method.href}
               buttonLabel={method.buttonLabel}
             />
           ))}

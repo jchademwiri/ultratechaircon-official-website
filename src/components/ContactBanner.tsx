@@ -2,6 +2,7 @@ import React from 'react';
 import { MessageCircle, Phone, Mail, Clock, MapPin, CheckCircle } from 'lucide-react';
 import { ButtonOutline, ButtonSolid } from './Button';
 import Link from 'next/link';
+import { appMessage } from '@/data/links';
 
 interface ContactMethodProps {
   icon: React.ReactNode;
@@ -61,7 +62,7 @@ const ContactBanner = () => {
       icon: <MessageCircle className="h-7 w-7" />,
       title: "WhatsApp",
       value: "Chat Now",
-      href: "https://wa.me/27737671328?text=Hi, I'd like to discuss AC services",
+      href: `${appMessage}`,
       accent: "green"
     },
     {
@@ -139,12 +140,12 @@ const ContactBanner = () => {
           {/* Primary CTAs */}
           <div className="mb-12 flex flex-wrap items-center justify-center gap-4">
             <ButtonSolid 
-              href="https://wa.me/27737671328?text=Hi, I'd like to request a quote for AC services" 
+              url={`${appMessage}`} 
               label="Chat on WhatsApp" 
               icon={<MessageCircle className="h-5 w-5" />}
             />
             <ButtonOutline 
-              href="tel:+27737671328" 
+              url="tel:+27737671328" 
               label="Call 073 767 1328" 
               icon={<Phone className="h-5 w-5" />}
             />
