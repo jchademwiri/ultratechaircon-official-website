@@ -19,12 +19,12 @@ const Services = () => {
       
       {/* Services Grid Section */}
       <section className="relative overflow-hidden py-20 text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-blue-950/90 to-slate-900/85" />
-        <div className="absolute inset-0 opacity-50 mix-blend-screen [background-image:radial-gradient(circle_at_top,_rgba(63,131,248,0.4),_transparent_65%)]" />
-        <div className="absolute inset-0 opacity-15 [background-image:linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:160px_160px]" />
-        <div className="absolute inset-x-0 bottom-[-120px] h-64 blur-[140px] bg-gradient-to-r from-blue-500/25 via-cyan-400/10 to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 -top-32 h-32 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950/90" />
-        <div className="pointer-events-none absolute inset-x-0 -bottom-32 h-32 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950/95 via-blue-950/90 to-slate-900/85" />
+        <div className="absolute inset-0 opacity-50 mix-blend-screen bg-[radial-gradient(circle_at_top,rgba(63,131,248,0.4),transparent_65%)]" />
+        <div className="absolute inset-0 opacity-15 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[160px_160px]" />
+        <div className="absolute inset-x-0 bottom-[-120px] h-64 blur-[140px] bg-linear-to-r from-blue-500/25 via-cyan-400/10 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 -top-32 h-32 bg-linear-to-b from-transparent via-slate-950/40 to-slate-950/90" />
+        <div className="pointer-events-none absolute inset-x-0 -bottom-32 h-32 bg-linear-to-t from-slate-950/80 via-slate-950/30 to-transparent" />
 
         <div className="relative mx-auto w-[92%] max-w-7xl">
           <div className="mb-14 text-center">
@@ -56,13 +56,13 @@ const Services = () => {
 
       {/* Why Choose Us Section */}
       <section className="relative overflow-hidden py-20 text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-blue-950/85 to-blue-900/80" />
-        <div className="absolute inset-0 opacity-45 [background-image:radial-gradient(circle_at_top,_rgba(63,131,248,0.3),_transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-x-0 -top-28 h-28 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950/85" />
-        <div className="pointer-events-none absolute inset-x-0 -bottom-40 h-40 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950/90 via-blue-950/85 to-blue-900/80" />
+        <div className="absolute inset-0 opacity-45 bg-[radial-gradient(circle_at_top,rgba(63,131,248,0.3),transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-x-0 -top-28 h-28 bg-linear-to-b from-transparent via-slate-950/40 to-slate-950/85" />
+        <div className="pointer-events-none absolute inset-x-0 -bottom-40 h-40 bg-linear-to-t from-slate-900/80 via-slate-900/30 to-transparent" />
 
         <div className="relative mx-auto w-[92%] max-w-7xl">
-          <div className="grid gap-12 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/45 to-blue-950/70 p-10 shadow-2xl shadow-blue-900/40 backdrop-blur-2xl lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-12 rounded-[32px] border border-white/10 bg-linear-to-br from-slate-900/70 via-slate-950/45 to-blue-950/70 p-10 shadow-2xl shadow-blue-900/40 backdrop-blur-2xl lg:grid-cols-2 lg:items-center">
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-blue-100">
                 Why Us
@@ -113,7 +113,7 @@ const Services = () => {
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/45 via-blue-900/35 to-slate-900/25 p-6 text-center shadow-2xl shadow-black/20 backdrop-blur"
+                  className="rounded-3xl border border-white/10 bg-linear-to-br from-slate-900/45 via-blue-900/35 to-slate-900/25 p-6 text-center shadow-2xl shadow-black/20 backdrop-blur-sm"
                 >
                   <div className="mb-2 text-4xl font-bold text-blue-100">
                     {stat.number}

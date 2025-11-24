@@ -5,7 +5,7 @@ import { TService } from '@/lib/types';
 
 const ServiceCard = ({ picture, title, desc, link }: TService) => {
   const cardContent = (
-    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/90 via-slate-950/50 to-black/50 text-white transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/40 backdrop-blur">
+    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-linear-to-b from-slate-900/90 via-slate-950/50 to-black/50 text-white transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/40 backdrop-blur-sm">
       {/* Image Container */}
       <div className="relative h-60 w-full overflow-hidden bg-slate-900/40">
         <Image
@@ -17,11 +17,11 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
         />
         
         {/* Overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-linear-to-t from-blue-950/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         
         {/* Hover Icon */}
         {link && (
-          <div className="absolute right-4 top-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
+          <div className="absolute right-4 top-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 opacity-0 shadow-lg backdrop-blur-xs transition-all duration-300 group-hover:opacity-100">
             <ArrowRight className="h-5 w-5 text-blue-600 transition-transform group-hover:translate-x-1" />
           </div>
         )}
@@ -47,7 +47,7 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
 
       {/* Bottom Border Accent */}
       {link && (
-        <div className="h-1 w-0 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-500 group-hover:w-full" />
+        <div className="h-1 w-0 bg-linear-to-r from-blue-500 to-cyan-400 transition-all duration-500 group-hover:w-full" />
       )}
     </article>
   );

@@ -42,13 +42,13 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[#020817] text-white">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-slate-950 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.2),_transparent_60%)]" />
-        <div className="absolute inset-0 opacity-10 mix-blend-screen [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:120px_120px]" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-900/50 via-slate-950 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.2),transparent_60%)]" />
+        <div className="absolute inset-0 opacity-10 mix-blend-screen bg-[linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[120px_120px]" />
       </div>
 
       <section className="relative mx-auto w-[92%] max-w-7xl py-16">
-        <div className="grid gap-12 lg:grid-cols-[1.2fr,0.8fr,0.8fr,1fr]">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <div>
             <Link href="/" className="mb-6 inline-flex items-center">
               <Image
@@ -163,7 +163,7 @@ const Footer = () => {
           </div>
           
         </div>
-        <div className="mt-6 w-full rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+        <div className="mt-6 w-full rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
               <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-wrap items-center gap-6 text-sm text-blue-100">
                   {trustBadges.map((badge) => (

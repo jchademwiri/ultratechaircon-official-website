@@ -22,10 +22,10 @@ const ContactMethod = ({ icon, title, value, href, accent }: ContactMethodProps)
   return (
     <Link
       href={href}
-      className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-8 backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-white/30"
+      className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-white/10 to-white/5 p-8 backdrop-blur-xs transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-white/10 hover:border-white/30"
     >
       {/* Hover glow effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/0 to-white/0 opacity-0 transition-opacity duration-500 group-hover:from-white/5 group-hover:to-transparent group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-linear-to-br from-white/0 to-white/0 opacity-0 transition-opacity duration-500 group-hover:from-white/5 group-hover:to-transparent group-hover:opacity-100" />
       
       <div className="relative flex flex-col items-center text-center">
         <div className={`mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-white shadow-lg transition-all duration-500 ${accentColors[accent]}`}>
@@ -82,7 +82,7 @@ const ContactBanner = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 py-20">
+    <section className="relative overflow-hidden bg-linear-to-br from-blue-950 via-blue-900 to-blue-950 py-20">
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-[url('/aircon-repairs.jpg')] bg-cover bg-center opacity-10"
@@ -96,7 +96,7 @@ const ContactBanner = () => {
       <div className="relative z-10 mx-auto w-[90%] max-w-6xl">
         <div className="text-center">
           {/* Badge */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-500/20 px-6 py-2 text-sm font-semibold text-green-300 backdrop-blur-sm">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-500/20 px-6 py-2 text-sm font-semibold text-green-300 backdrop-blur-xs">
             <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
             <span>We&apos;re Available 24/7</span>
           </div>
@@ -115,7 +115,7 @@ const ContactBanner = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3 backdrop-blur-sm"
+                className="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3 backdrop-blur-xs"
               >
                 <CheckCircle className="h-5 w-5 shrink-0 text-green-400" />
                 <span className="text-sm font-medium text-white">{benefit}</span>
@@ -167,7 +167,7 @@ const ContactBanner = () => {
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-50" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-blue-400 to-transparent opacity-50" />
     </section>
   );
 };

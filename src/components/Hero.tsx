@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section className="relative flex min-h-screen flex-col justify-center bg-blue-800 bg-[url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600')] bg-cover bg-fixed bg-center text-white">
       {/* Darker overlay for better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 to-blue-950/90"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-blue-950/80 to-blue-950/90"></div>
       
       <div className="relative z-10 mx-auto w-[90%] max-w-4xl py-20 text-center">
         {/* Trust badge */}
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur-sm">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur-xs">
           <svg className="h-5 w-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
           </svg>
