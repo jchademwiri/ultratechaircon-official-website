@@ -12,9 +12,10 @@ const Services = () => {
       
       {/* Services Grid Section */}
       <section className="relative overflow-hidden py-20 text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-950 to-slate-950" />
-        <div className="absolute inset-0 opacity-40 mix-blend-screen [background-image:radial-gradient(circle_at_top,_rgba(59,130,246,0.35),_transparent_60%)]" />
-        <div className="absolute inset-0 opacity-10 [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:140px_140px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/95 via-blue-950/90 to-slate-900/85" />
+        <div className="absolute inset-0 opacity-50 mix-blend-screen [background-image:radial-gradient(circle_at_top,_rgba(63,131,248,0.4),_transparent_65%)]" />
+        <div className="absolute inset-0 opacity-15 [background-image:linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:160px_160px]" />
+        <div className="absolute inset-x-0 bottom-[-120px] h-64 blur-[140px] bg-gradient-to-r from-blue-500/25 via-cyan-400/10 to-transparent" />
 
         <div className="relative mx-auto w-[92%] max-w-7xl">
           <div className="mb-14 text-center">
@@ -46,11 +47,11 @@ const Services = () => {
 
       {/* Why Choose Us Section */}
       <section className="relative overflow-hidden py-20 text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900" />
-        <div className="absolute inset-0 opacity-40 [background-image:radial-gradient(circle_at_top,_rgba(59,130,246,0.2),_transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-blue-950/85 to-blue-900/80" />
+        <div className="absolute inset-0 opacity-45 [background-image:radial-gradient(circle_at_top,_rgba(63,131,248,0.3),_transparent_60%)]" />
 
         <div className="relative mx-auto w-[92%] max-w-7xl">
-          <div className="grid gap-12 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/75 via-slate-950/50 to-blue-950/75 p-10 shadow-2xl shadow-blue-900/40 backdrop-blur-2xl lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-12 rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900/70 via-slate-950/45 to-blue-950/70 p-10 shadow-2xl shadow-blue-900/40 backdrop-blur-2xl lg:grid-cols-2 lg:items-center">
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-blue-100">
                 Why Us
@@ -74,8 +75,8 @@ const Services = () => {
                   "Commercial & Residential Expertise",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500/15">
-                      <CheckCircle className="h-4 w-4 text-blue-300" />
+                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500/20 ring-1 ring-white/10">
+                      <CheckCircle className="h-4 w-4 text-blue-200" />
                     </div>
                     <span className="text-blue-100">{benefit}</span>
                   </div>
@@ -101,9 +102,9 @@ const Services = () => {
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="rounded-3xl bg-gradient-to-br from-slate-900/60 to-blue-900/60 p-6 text-center shadow-xl shadow-black/30"
+                  className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/45 via-blue-900/35 to-slate-900/25 p-6 text-center shadow-2xl shadow-black/20 backdrop-blur"
                 >
-                  <div className="mb-2 text-4xl font-bold text-blue-300">
+                  <div className="mb-2 text-4xl font-bold text-blue-100">
                     {stat.number}
                   </div>
                   <div className="text-sm font-semibold text-blue-100/80">
