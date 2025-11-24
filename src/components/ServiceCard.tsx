@@ -5,9 +5,9 @@ import { TService } from '@/lib/types';
 
 const ServiceCard = ({ picture, title, desc, link }: TService) => {
   const cardContent = (
-    <article className="overflow-hidden rounded-xl border border-gray-200 bg-white transition-all duration-300 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/10">
+    <article className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/90 via-slate-950/50 to-black/50 text-white transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/40 backdrop-blur">
       {/* Image Container */}
-      <div className="relative h-60 w-full overflow-hidden bg-gray-100">
+      <div className="relative h-60 w-full overflow-hidden bg-slate-900/40">
         <Image
           src={picture.logo}
           alt={picture.alt}
@@ -29,16 +29,16 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="mb-3 text-xl font-bold text-gray-900 transition-colors group-hover:text-blue-600">
+        <h3 className="mb-3 text-xl font-bold text-white">
           {title}
         </h3>
-        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-gray-600">
+        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-blue-100/80">
           {desc}
         </p>
         
         {/* Read More Link - Only show if link exists */}
         {link && (
-          <div className="flex items-center gap-2 text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-700">
+          <div className="flex items-center gap-2 text-sm font-semibold text-blue-200 transition-colors group-hover:text-white">
             <span>Learn More</span>
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </div>
@@ -47,7 +47,7 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
 
       {/* Bottom Border Accent */}
       {link && (
-        <div className="h-1 w-0 bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-500 group-hover:w-full" />
+        <div className="h-1 w-0 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-500 group-hover:w-full" />
       )}
     </article>
   );
@@ -55,7 +55,7 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
   // If link exists, wrap in Link component, otherwise just return the card
   if (link) {
     return (
-      <Link href='#' className="group">
+      <Link href={link.href || '#'} className="group">
         {cardContent}
       </Link>
     );
