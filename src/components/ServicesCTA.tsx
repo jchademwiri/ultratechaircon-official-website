@@ -17,10 +17,14 @@ const stats = [
 
 const ServicesCTA = () => {
   return (
-    <section className="relative py-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-blue-900/20 via-blue-950/10 to-black" />
+    <section className="relative overflow-hidden py-24 text-white">
+      <div className="absolute inset-0">
+        <div className="h-full w-full bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_55%)]" />
+        <div className="absolute inset-0 opacity-20 mix-blend-screen [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:120px_120px]" />
+      </div>
 
-      <div className="mx-auto w-[92%] max-w-6xl overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900 via-blue-950 to-blue-900 text-white shadow-2xl shadow-blue-900/40">
+      <div className="relative mx-auto w-[92%] max-w-6xl overflow-hidden rounded-[32px] border border-white/10 bg-white/5 text-white shadow-2xl shadow-blue-900/40 backdrop-blur">
         <div className="grid gap-10 md:grid-cols-[1.05fr,0.95fr]">
           <div className="relative p-10 lg:p-14">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-blue-100">
