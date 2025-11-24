@@ -1,13 +1,15 @@
+import { appMessage, whatsapp } from '@/data/links';
 import { Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
 const SocialIcons = () => {
   return (
-    <ul className='flex gap-2 my-2 '>
-      <li className='py-2'>
+    <ul className="flex items-center gap-3 text-white/80">
+      <li>
         <Link
-          href='/'
-          target='_blank'
+          href={appMessage}
+          target='_self'
+          aria-label='WhatsApp'
           rel='noopener noreferrer'
           className='flex gap-2 hover:text-primary'
         >
@@ -15,10 +17,11 @@ const SocialIcons = () => {
           {/* WhatsApp */}
         </Link>
       </li>
-      <li className='py-2'>
+      <li>
         <Link
           href='/'
           target='_blank'
+          aria-label='Facebook'
           rel='noopener noreferrer'
           className='flex gap-2 hover:text-primary'
         >
@@ -26,10 +29,11 @@ const SocialIcons = () => {
           {/* Facebook */}
         </Link>
       </li>
-      <li className='py-2'>
+      <li>
         <Link
           href='/'
           target='_blank'
+          aria-label='Twitter'
           rel='noopener noreferrer'
           className='flex gap-1 hover:text-primary'
         >
@@ -38,11 +42,12 @@ const SocialIcons = () => {
         </Link>
       </li>
 
-      <li className='py-2'>
+      <li>
         <Link
           href='/'
           target='_blank'
-          rel='noopener noreferrer'
+          aria-label='Linkedin'
+            rel='noopener noreferrer'
           className='flex gap-1 hover:text-primary'
         >
           <Linkedin size={20} />

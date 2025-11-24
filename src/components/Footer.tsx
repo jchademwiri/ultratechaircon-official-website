@@ -1,4 +1,12 @@
-import { ChevronRight, Mail, MapPin, Phone, Clock, Shield, Award } from "lucide-react";
+import {
+  ChevronRight,
+  Mail,
+  MapPin,
+  Phone,
+  Clock,
+  Shield,
+  Award,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
@@ -6,14 +14,14 @@ import { logo } from "@/data/images";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-  
+
   const services = [
     { name: "Aircon Installation", href: "/services" },
     { name: "AC Maintenance", href: "/services" },
     { name: "Refrigeration & Cold Rooms", href: "/services" },
     { name: "Air-conditioning Repairs", href: "/services" },
     { name: "Emergency AC Service", href: "/services" },
-    { name: "Commercial HVAC", href: "/services" }
+    { name: "Commercial HVAC", href: "/services" },
   ];
 
   const quickLinks = [
@@ -22,90 +30,71 @@ const Footer = () => {
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
     { name: "Request Quote", href: "/contact" },
-    // { name: "FAQ", href: "/faq" }
   ];
 
   const trustBadges = [
     { icon: <Shield className="h-5 w-5" />, text: "Licensed & Insured" },
     { icon: <Award className="h-5 w-5" />, text: "15+ Years Experience" },
-    { icon: <Clock className="h-5 w-5" />, text: "24/7 Emergency Service" }
+    { icon: <Clock className="h-5 w-5" />, text: "24/7 Emergency Service" },
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-gray-300">
-      {/* Main Footer Content */}
-      <section className="mx-auto w-[90%] max-w-7xl py-12">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company Info */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="mb-4 inline-block transition-transform hover:scale-105">
+    <footer className="relative overflow-hidden bg-[#020817] text-white">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 via-slate-950 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.2),_transparent_60%)]" />
+        <div className="absolute inset-0 opacity-10 mix-blend-screen [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:120px_120px]" />
+      </div>
+
+      <section className="relative mx-auto w-[92%] max-w-7xl py-16">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr,0.8fr,0.8fr,1fr]">
+          <div>
+            <Link href="/" className="mb-6 inline-flex items-center">
               <Image
                 src={logo}
                 alt="UltraTech Aircon logo"
-                width={160}
-                height={40}
-                className="h-auto w-40"
+                width={180}
+                height={50}
+                className="h-auto w-44"
               />
             </Link>
-            <p className="mb-4 text-sm leading-relaxed text-gray-400">
-              Cape Town&apos;s trusted air conditioning specialists. Professional installation, 
-              maintenance, and repairs for all AC types.
+            <p className="max-w-sm text-sm text-blue-100/85">
+              Cape Town HVAC engineers on standby for commercial, industrial and
+              residential estates. Precision installs, preventative maintenance
+              and emergency response guided by 15+ years experience.
             </p>
-            
-            {/* Trust Badges */}
-            {/* <div className="mb-4 space-y-2">
-              {trustBadges.map((badge, index) => (
-                <div key={index} className="flex items-center gap-2 text-sm">
-                  <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-600/20 text-blue-400">
-                    {badge.icon}
-                  </div>
-                  <span className="text-sm font-medium text-white">{badge.text}</span>
-                </div>
-              ))}
-            </div> */}
-
-            <SocialIcons />
           </div>
-
-          {/* Quick Links */}
+         
           <div>
-            <h3 className="mb-4 text-base font-bold uppercase tracking-wider text-white">
-              Quick Links
-            </h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-blue-200">
+              Navigation
+            </p>
+            <ul className="space-y-3 text-sm text-blue-100/80">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="group flex items-center text-sm text-gray-400 transition-colors hover:text-blue-400"
+                    className="group flex items-center gap-2 transition-colors hover:text-white"
                   >
-                    <ChevronRight 
-                      size={16} 
-                      className="mr-1 transition-transform group-hover:translate-x-1" 
-                    />
+                    <ChevronRight className="h-4 w-4 text-blue-400 transition-transform group-hover:translate-x-1" />
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Services */}
           <div>
-            <h3 className="mb-4 text-base font-bold uppercase tracking-wider text-white">
-              Our Services
-            </h3>
-            <ul className="space-y-2">
-              {services.map((service, index) => (
-                <li key={index}>
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-blue-200">
+              Services
+            </p>
+            <ul className="space-y-3 text-sm text-blue-100/80">
+              {services.map((service) => (
+                <li key={service.name}>
                   <Link
                     href={service.href}
-                    className="group flex items-center text-sm text-gray-400 transition-colors hover:text-blue-400"
+                    className="group flex items-center gap-2 transition-colors hover:text-white"
                   >
-                    <ChevronRight 
-                      size={16} 
-                      className="mr-1 transition-transform group-hover:translate-x-1" 
-                    />
+                    <ChevronRight className="h-4 w-4 text-blue-400 transition-transform group-hover:translate-x-1" />
                     {service.name}
                   </Link>
                 </li>
@@ -113,118 +102,112 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-base font-bold uppercase tracking-wider text-white">
-              Contact Us
-            </h3>
-            <p className="mb-4 text-sm font-semibold text-blue-400">
-              Available 24/7 for Emergency Service
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-blue-200">
+              Contact
             </p>
-
-            <div className="space-y-3">
-              <address className="not-italic">
-                <Link
-                  href="https://maps.google.com/?q=Cape+Town"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-start gap-2 text-sm text-gray-400 transition-colors hover:text-blue-400"
-                >
-                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
-                  <span>
-                    Cape Town, Western Cape
-                    <br />
-                    <span className="text-xs text-gray-500">Serving all suburbs</span>
-                  </span>
-                </Link>
-              </address>
+            <div className="space-y-5 text-sm text-blue-100/80">
+              <div className="flex items-start gap-3">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-blue-200">
+                  <MapPin className="h-4 w-4" />
+                </span>
+                <div>
+                  <p className="font-semibold text-white">Cape Town</p>
+                  <p className="text-xs text-blue-100/70">
+                    Serving all suburbs & industrial parks
+                  </p>
+                </div>
+              </div>
 
               <Link
                 href="tel:+27737671328"
-                className="group flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-blue-400"
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-white transition hover:border-white/30 hover:bg-white/10"
               >
-                <Phone className="h-4 w-4 shrink-0 text-blue-500" />
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-500/15 text-blue-200">
+                  <Phone className="h-4 w-4" />
+                </span>
                 <div>
-                  <div className="font-semibold text-white">073 767 1328</div>
-                  <div className="text-xs text-gray-500">Call or WhatsApp</div>
+                  <p className="text-base font-semibold">073 767 1328</p>
+                  <p className="text-xs uppercase tracking-wide text-blue-100/70">
+                    Call or WhatsApp 24/7
+                  </p>
                 </div>
               </Link>
 
               <Link
                 href="mailto:info@ultratechaircon.co.za"
-                className="group flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-blue-400"
+                className="group flex items-center gap-3 text-sm transition hover:text-white"
               >
-                <Mail className="h-4 w-4 shrink-0 text-blue-500" />
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-blue-200">
+                  <Mail className="h-4 w-4" />
+                </span>
                 <div>
-                  <div className="break-all text-sm">info@ultratechaircon.co.za</div>
-                  <div className="text-xs text-gray-500">Email us anytime</div>
+                  <p className="break-all text-sm text-white">
+                    info@ultratechaircon.co.za
+                  </p>
+                  <p className="text-xs uppercase tracking-wide text-blue-100/70">
+                    Email us anytime
+                  </p>
                 </div>
               </Link>
-            </div>
 
-            {/* CTA Button */}
-            <Link
-              href="tel:+27737671328"
-              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white transition-all hover:bg-blue-700 hover:shadow-lg"
-            >
-              <Phone className="h-4 w-4" />
-              Call Now
-            </Link>
+              <Link
+                href="/contact"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
+              >
+                <Phone className="h-4 w-4" />
+                Request a callback
+              </Link>
+            </div>
           </div>
+          
         </div>
+        <div className="mt-6 w-full rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+              <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex flex-wrap items-center gap-6 text-sm text-blue-100">
+                  {trustBadges.map((badge) => (
+                    <div key={badge.text} className="flex items-center gap-3">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-500/15 text-blue-200">
+                        {badge.icon}
+                      </span>
+                      <span className="font-medium whitespace-nowrap">
+                        {badge.text}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex justify-start sm:flex-1 sm:justify-end">
+                  <SocialIcons />
+                </div>
+              </div>
+            </div>
       </section>
 
-      {/* Newsletter Section */}
-      {/* <section className="border-t border-gray-800 bg-gray-900/50">
-        <div className="mx-auto w-[90%] max-w-7xl py-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <div>
-              <h4 className="mb-1 text-sm font-bold text-white">Get Maintenance Tips & Special Offers</h4>
-              <p className="text-xs text-gray-400">Subscribe to our newsletter for AC care tips</p>
-            </div>
-            <form className="flex w-full max-w-md gap-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 rounded-lg border border-gray-700 bg-gray-800 px-4 py-2 text-sm text-white placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-                required
-              />
-              <button
-                type="submit"
-                className="rounded-lg bg-blue-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Bottom Bar */}
-      <section className="border-t border-gray-800 bg-gray-950 py-4">
-        <div className="mx-auto flex w-[90%] max-w-7xl flex-col items-center justify-between gap-3 text-xs text-gray-400 sm:flex-row">
+      <section className="relative border-t border-white/10 bg-black/50 py-5 text-xs text-blue-100/70">
+        <div className="mx-auto flex w-[92%] max-w-7xl flex-col justify-between gap-3 sm:flex-row sm:items-center">
           <p className="text-center sm:text-left">
-            © Copyright {year} UltraTech Aircons. All rights reserved.
+            © {year} UltraTech Aircons. All rights reserved.
           </p>
-          
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/" className="hover:text-blue-400">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-center sm:text-right">
+            <Link href="/" className="transition hover:text-white">
               Privacy Policy
             </Link>
-            <Link href="/" className="hover:text-blue-400">
+            <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
+            <Link href="/" className="transition hover:text-white">
               Terms of Service
             </Link>
-            <div className="text-gray-500">
+            <span className="hidden h-4 w-px bg-white/20 sm:inline-block" />
+            <span>
               Crafted by{" "}
               <Link
                 href="https://www.jacobc.co.za/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-blue-400 hover:text-blue-300"
+                className="font-medium text-blue-300 hover:text-white"
               >
                 Jacob Chademwiri
               </Link>
-            </div>
+            </span>
           </div>
         </div>
       </section>
@@ -233,3 +216,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
