@@ -61,8 +61,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={openSans.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={openSans.className} suppressHydrationWarning>
         <GoogleAnalytics />
         {/* <Header /> */}
         <Navbar />

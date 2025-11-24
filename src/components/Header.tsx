@@ -27,7 +27,7 @@ const Header = () => {
             </Link>
           ))}
           <li>
-            <ButtonSolid href="tel:+27737671328 " label="073 767 1328 " />
+            <ButtonSolid url="tel:+27737671328" label="073 767 1328" />
            
           </li>
         </ul>

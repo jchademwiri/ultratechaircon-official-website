@@ -4,14 +4,14 @@ import { ReactElement } from "react";
 type TCard = {
   icon: ReactElement;
   title: string;
-  desc: string;
+  description: string;
 };
 
 type TService = {
   picture: TLogo;
   title: string;
   desc: string;
-  link?: TButton;
+  link?: TLink;
 };
 
 type TLogo = {
@@ -20,9 +20,9 @@ type TLogo = {
 };
 
 type TLink = {
-  label: string;
+  label?: string;
   href: string;
-  ariaLabel: string;
+  ariaLabel? : string;
 };
 
 type TSocialLink = {
@@ -32,8 +32,9 @@ type TSocialLink = {
 };
 
 type TButton = {
-  href: string;
+  url: string;
   label: string;
+  icon?: ReactElement;
 };
 
 export type { TCard, TLogo, TLink, TSocialLink, TButton, TService };
