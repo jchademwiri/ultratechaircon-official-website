@@ -11,6 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 import { logo } from "@/data/images";
+import { appMessage } from "@/data/links";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -34,7 +35,7 @@ const Footer = () => {
 
   const trustBadges = [
     { icon: <Shield className="h-5 w-5" />, text: "Licensed & Insured" },
-    { icon: <Award className="h-5 w-5" />, text: "15+ Years Experience" },
+    { icon: <Award className="h-5 w-5" />, text: "7+ Years Experience" },
     { icon: <Clock className="h-5 w-5" />, text: "24/7 Emergency Service" },
   ];
 
@@ -61,7 +62,7 @@ const Footer = () => {
             <p className="max-w-sm text-sm text-blue-100/85">
               Cape Town HVAC engineers on standby for commercial, industrial and
               residential estates. Precision installs, preventative maintenance
-              and emergency response guided by 15+ years experience.
+              and emergency response guided by 7+ Years experience.
             </p>
           </div>
          
@@ -152,7 +153,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="/contact"
+                href={appMessage}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
               >
                 <Phone className="h-4 w-4" />

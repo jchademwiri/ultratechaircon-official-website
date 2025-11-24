@@ -1,7 +1,6 @@
 
 import { Phone, Mail, MapPin, ArrowRight, Clock } from 'lucide-react';
 import { ButtonOutline } from '@/components';
-import Link from 'next/link';
 
 interface ContactCardProps {
   icon: React.ReactNode;
@@ -14,10 +13,7 @@ interface ContactCardProps {
 
 const ContactCard = ({ icon, title, value, description, url, buttonLabel }: ContactCardProps) => {
   return (
-    <Link
-      href={url}
-      className="group relative overflow-hidden rounded-lg border border-blue-600/30 bg-gradient-to-br from-blue-600/20 to-blue-600/10 p-8 transition-all duration-500 hover:scale-105 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/20"
-    >
+    <div className="group relative overflow-hidden rounded-lg border border-blue-600/30 bg-gradient-to-br from-blue-600/20 to-blue-600/10 p-8 transition-all duration-500 hover:scale-105 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/20">
       {/* Decorative corner gradient */}
       <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       
@@ -47,7 +43,7 @@ const ContactCard = ({ icon, title, value, description, url, buttonLabel }: Cont
         {/* Button */}
         <ButtonOutline url={url} label={buttonLabel} />
       </div>
-    </Link>
+    </div>
   );
 };
 

@@ -10,7 +10,7 @@ const highlights = [
 ];
 
 const stats = [
-  { label: "Projects Delivered", value: "650+" },
+  { label: "Projects Delivered", value: "100+" },
   { label: "Average Response", value: "2 hrs" },
   { label: "Warranty Coverage", value: "12 mo" },
 ];

@@ -99,7 +99,7 @@ const HomeService = () => {
                   <p className="text-sm text-blue-100">Years in Cape Town</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-blue-300">500+</p>
+                  <p className="text-3xl font-bold text-blue-300">100+</p>
                   <p className="text-sm text-blue-100">Units serviced yearly</p>
                 </div>
               </div>

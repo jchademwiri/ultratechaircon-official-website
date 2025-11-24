@@ -34,9 +34,9 @@ const Services = () => {
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service: TService) => (
+            {services.map((service: TService, index) => (
               <ServiceCard
-                key={service.link?.href}
+                key={`${service.title}-${index}`}
                 picture={service.picture}
                 title={service.title}
                 desc={service.desc}
