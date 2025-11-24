@@ -5,7 +5,7 @@ import { TService } from '@/lib/types';
 
 const ServiceCard = ({ picture, title, desc, link }: TService) => {
   const cardContent = (
-    <article className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/90 via-slate-950/50 to-black/50 text-white transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/40 backdrop-blur">
+    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/90 via-slate-950/50 to-black/50 text-white transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-900/40 backdrop-blur">
       {/* Image Container */}
       <div className="relative h-60 w-full overflow-hidden bg-slate-900/40">
         <Image
@@ -55,7 +55,7 @@ const ServiceCard = ({ picture, title, desc, link }: TService) => {
   // If link exists, wrap in Link component, otherwise just return the card
   if (link) {
     return (
-      <Link href={link.href || '#'} className="group">
+      <Link href={link.href || '#'}>
         {cardContent}
       </Link>
     );

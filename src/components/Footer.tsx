@@ -11,6 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 import { logo } from "@/data/images";
+import { appMessage } from "@/data/links";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -152,7 +153,7 @@ const Footer = () => {
               </Link>
 
               <Link
-                href="/contact"
+                href={appMessage}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-500"
               >
                 <Phone className="h-4 w-4" />
