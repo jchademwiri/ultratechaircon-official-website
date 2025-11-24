@@ -22,6 +22,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
+  keywords: [
+    "Air conditioning Cape Town",
+    "Aircon repairs Cape Town",
+    "Aircon installation Cape Town",
+    "Refrigeration services Cape Town",
+    "Commercial air conditioning",
+    "Residential air conditioning",
+    "HVAC services",
+    "Ultratech Aircon",
+  ],
   openGraph: {
     title:
       "Air conditioner Installation & Repairs in Cape Town - Ultratech Aircon",
@@ -46,7 +56,7 @@ export const metadata: Metadata = {
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
@@ -63,6 +73,50 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={openSans.className} suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Ultratech Aircon",
+              image: "https://www.ultratechaircon.co.za/airconditioning.jpg",
+              "@id": "https://www.ultratechaircon.co.za",
+              url: "https://www.ultratechaircon.co.za",
+              telephone: "+27781838234",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Cape Town",
+                addressLocality: "Cape Town",
+                addressRegion: "WC",
+                postalCode: "8000",
+                addressCountry: "ZA",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: -33.9249,
+                longitude: 18.4241,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "08:00",
+                closes: "17:00",
+              },
+              sameAs: [
+                "https://www.facebook.com/ultratechaircon",
+                "https://twitter.com/jchademwiri",
+              ],
+            }),
+          }}
+        />
         <GoogleAnalytics />
         {/* <Header /> */}
         <Navbar />
