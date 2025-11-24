@@ -125,7 +125,7 @@ const ServiceBanner = () => {
             </div>
             <div className="h-12 w-px bg-white/20" />
             <div className="text-white">
-              <div className="mb-1 text-3xl font-bold">500+</div>
+              <div className="mb-1 text-3xl font-bold">100+</div>
               <div className="text-sm text-gray-300">Happy Clients</div>
             </div>
             <div className="h-12 w-px bg-white/20" />

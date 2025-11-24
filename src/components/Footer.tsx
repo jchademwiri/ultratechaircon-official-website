@@ -35,7 +35,7 @@ const Footer = () => {
 
   const trustBadges = [
     { icon: <Shield className="h-5 w-5" />, text: "Licensed & Insured" },
-    { icon: <Award className="h-5 w-5" />, text: "15+ Years Experience" },
+    { icon: <Award className="h-5 w-5" />, text: "7+ Years Experience" },
     { icon: <Clock className="h-5 w-5" />, text: "24/7 Emergency Service" },
   ];
 
@@ -62,7 +62,7 @@ const Footer = () => {
             <p className="max-w-sm text-sm text-blue-100/85">
               Cape Town HVAC engineers on standby for commercial, industrial and
               residential estates. Precision installs, preventative maintenance
-              and emergency response guided by 15+ years experience.
+              and emergency response guided by 7+ Years experience.
             </p>
           </div>
          
