@@ -14,6 +14,7 @@ const Hero = () => {
 						className="h-5 w-5 text-green-400"
 						fill="currentColor"
 						viewBox="0 0 20 20"
+						aria-hidden="true"
 					>
 						<path
 							fillRule="evenodd"
@@ -41,6 +42,7 @@ const Hero = () => {
 							className="h-5 w-5 text-green-400"
 							fill="currentColor"
 							viewBox="0 0 20 20"
+							aria-hidden="true"
 						>
 							<path
 								fillRule="evenodd"
@@ -55,6 +57,7 @@ const Hero = () => {
 							className="h-5 w-5 text-green-400"
 							fill="currentColor"
 							viewBox="0 0 20 20"
+							aria-hidden="true"
 						>
 							<path
 								fillRule="evenodd"
@@ -69,6 +72,7 @@ const Hero = () => {
 							className="h-5 w-5 text-green-400"
 							fill="currentColor"
 							viewBox="0 0 20 20"
+							aria-hidden="true"
 						>
 							<path
 								fillRule="evenodd"
@@ -110,6 +114,7 @@ const Hero = () => {
 					fill="none"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
+					aria-hidden="true"
 				>
 					<path
 						strokeLinecap="round"

@@ -1,4 +1,3 @@
-import { randomUUID } from "crypto";
 import Image from "next/image";
 import Link from "next/link";
 import { logo } from "@/data/images";
@@ -18,7 +17,7 @@ const Header = () => {
 				<ul className="flex gap-3">
 					{navLinks.map(({ label, href, ariaLabel }: TLink) => (
 						<Link
-							key={randomUUID()}
+							key={href}
 							className="hidden hover:text-primary sm:block"
 							href={href}
 							aria-label={ariaLabel}

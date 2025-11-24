@@ -6,7 +6,6 @@ import {
 	Snowflake,
 	Wrench,
 } from "lucide-react";
-import React from "react";
 import { appMessage } from "@/data/links";
 import type { TCard } from "@/lib/types";
 import { ButtonSolid } from "./Button";
@@ -87,9 +86,9 @@ const ServiceBanner = () => {
 
 				{/* Service Cards Grid */}
 				<div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-					{services.map((service, index) => (
+					{services.map((service) => (
 						<ServiceCard
-							key={index}
+							key={service.title}
 							icon={service.icon}
 							title={service.title}
 							description={service.description}

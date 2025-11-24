@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { ButtonOutline } from "@/components";
 
 interface ContactCardProps {
@@ -84,9 +84,9 @@ const ContactSection = () => {
 			<div className="mx-auto w-[90%] max-w-7xl">
 				{/* Contact Cards - Vertical on mobile, Horizontal on larger screens */}
 				<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-					{contactMethods.map((method, index) => (
+					{contactMethods.map((method) => (
 						<ContactCard
-							key={index}
+							key={method.title}
 							icon={method.icon}
 							title={method.title}
 							value={method.value}

@@ -60,6 +60,7 @@ const ContactMethod = ({
 						fill="none"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
+						aria-hidden="true"
 					>
 						<path
 							strokeLinecap="round"
@@ -147,9 +148,9 @@ const ContactBanner = () => {
 
 					{/* Benefits Grid */}
 					<div className="mb-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-						{benefits.map((benefit, index) => (
+						{benefits.map((benefit) => (
 							<div
-								key={index}
+								key={benefit}
 								className="flex items-center justify-center gap-2 rounded-lg bg-white/5 px-4 py-3 backdrop-blur-xs"
 							>
 								<CheckCircle className="h-5 w-5 shrink-0 text-green-400" />
@@ -162,9 +163,9 @@ const ContactBanner = () => {
 
 					{/* Contact Methods - Improved Layout */}
 					<div className="mb-12 grid gap-6 md:grid-cols-3">
-						{contactMethods.map((method, index) => (
+						{contactMethods.map((method) => (
 							<ContactMethod
-								key={index}
+								key={method.title}
 								icon={method.icon}
 								title={method.title}
 								value={method.value}

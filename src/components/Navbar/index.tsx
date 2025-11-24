@@ -3,7 +3,7 @@ import { Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { logo } from "@/data/images";
 import { navLinks } from "@/data/links";
 import type { TLink } from "@/lib/types";
@@ -27,13 +27,13 @@ const Navbar = () => {
 	const [shadow, setShadow] = useState(false);
 	const pathname = usePathname();
 
-	const handleNav = () => {
-		setNav(!nav);
-	};
+	const handleNav = useCallback(() => {
+		setNav((prev) => !prev);
+	}, []);
 
-	const closeNav = () => {
+	const closeNav = useCallback(() => {
 		setNav(false);
-	};
+	}, []);
 
 	// Handle scroll effect
 	useEffect(() => {
@@ -59,7 +59,7 @@ const Navbar = () => {
 	// Close mobile menu on route change
 	useEffect(() => {
 		closeNav();
-	}, [pathname]);
+	}, [closeNav]);
 
 	const isActive = (href: string) => pathname === href;
 
@@ -114,6 +114,7 @@ const Navbar = () => {
 
 				{/* Mobile Menu Button */}
 				<button
+					type="button"
 					onClick={handleNav}
 					className="relative z-101 rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
 					aria-label={nav ? "Close menu" : "Open menu"}
@@ -204,9 +205,9 @@ const Navbar = () => {
 									Connect With Us
 								</p>
 								<div className="flex gap-3">
-									{icons.map((item, index) => (
+									{icons.map((item) => (
 										<Link
-											key={index}
+											key={item.name}
 											href={item.link}
 											target="_blank"
 											rel="noopener noreferrer"

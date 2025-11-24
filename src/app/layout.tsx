@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import { Footer, Header } from "@/components";
+import { Footer } from "@/components";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Navbar from "@/components/Navbar";

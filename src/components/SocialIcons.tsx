@@ -1,6 +1,6 @@
 import { Facebook, Linkedin, MessageCircle, Twitter } from "lucide-react";
 import Link from "next/link";
-import { appMessage, whatsapp } from "@/data/links";
+import { appMessage } from "@/data/links";
 
 const SocialIcons = () => {
 	return (
