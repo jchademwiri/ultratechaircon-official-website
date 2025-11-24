@@ -51,6 +51,8 @@ const HomeService = () => {
 
       <div className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-blue-900 py-16 text-white shadow-2xl shadow-blue-900/40">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.18),_transparent_55%)]" />
+        <div className="pointer-events-none absolute inset-x-0 -top-20 h-20 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950/80" />
+        <div className="pointer-events-none absolute inset-x-0 -bottom-24 h-24 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent" />
 
         <div className="relative mx-auto w-[90%] max-w-7xl overflow-hidden rounded-3xl border border-white/5 bg-white/5 px-6 py-12 sm:px-10 lg:px-16">
           <div className="pointer-events-none absolute -left-24 top-10 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl" />

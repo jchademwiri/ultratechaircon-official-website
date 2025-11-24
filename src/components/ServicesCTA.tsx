@@ -23,6 +23,8 @@ const ServicesCTA = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_55%)]" />
         <div className="absolute inset-0 opacity-20 mix-blend-screen [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:120px_120px]" />
       </div>
+      <div className="pointer-events-none absolute inset-x-0 -top-24 h-24 bg-gradient-to-b from-transparent via-slate-950/35 to-slate-950/80" />
+      <div className="pointer-events-none absolute inset-x-0 -bottom-28 h-28 bg-gradient-to-t from-slate-950/80 via-slate-950/30 to-transparent" />
 
       <div className="relative mx-auto w-[92%] max-w-6xl overflow-hidden rounded-[32px] border border-white/10 bg-white/5 text-white shadow-2xl shadow-blue-900/40 backdrop-blur">
         <div className="grid gap-10 md:grid-cols-[1.05fr,0.95fr]">

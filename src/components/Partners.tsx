@@ -14,6 +14,8 @@ const Partners = () => {
     <section className="relative overflow-hidden py-24">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-blue-950 via-slate-950 to-blue-900" />
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-1/2 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.25),_transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-gradient-to-b from-transparent via-blue-950/40 to-blue-950/85" />
+      <div className="pointer-events-none absolute inset-x-0 -bottom-20 h-20 bg-gradient-to-t from-blue-950/80 via-blue-950/30 to-transparent" />
 
       <div className="mx-auto w-[92%] max-w-6xl text-white">
         <div className="mb-10 text-center">
