@@ -1,40 +1,40 @@
-import { StaticImageData } from "next/image";
-import { ReactElement } from "react";
+import type { StaticImageData } from "next/image";
+import type { ReactElement } from "react";
 
 type TCard = {
-  icon: ReactElement;
-  title: string;
-  description: string;
+	icon: ReactElement;
+	title: string;
+	description: string;
 };
 
 type TService = {
-  picture: TLogo;
-  title: string;
-  desc: string;
-  link?: TLink;
+	picture: TLogo;
+	title: string;
+	desc: string;
+	link?: TLink;
 };
 
 type TLogo = {
-  logo: StaticImageData | string;
-  alt: string;
+	logo: StaticImageData | string;
+	alt: string;
 };
 
 type TLink = {
-  label?: string;
-  href: string;
-  ariaLabel? : string;
+	label?: string;
+	href: string;
+	ariaLabel?: string;
 };
 
 type TSocialLink = {
-  icon: string;
-  label: string;
-  href: string;
+	icon: string;
+	label: string;
+	href: string;
 };
 
 type TButton = {
-  url: string;
-  label: string;
-  icon?: ReactElement;
+	url: string;
+	label: string;
+	icon?: ReactElement;
 };
 
 export type { TCard, TLogo, TLink, TSocialLink, TButton, TService };

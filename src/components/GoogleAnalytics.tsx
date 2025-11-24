@@ -1,23 +1,23 @@
-import Script from 'next/script'
+import Script from "next/script";
 
 export default function GoogleAnalytics() {
-  const GA_TRACKING_ID = 'G-ZE9X6MMX4G'; // AW-797999341
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+	const GA_TRACKING_ID = "G-ZE9X6MMX4G"; // AW-797999341
+	return (
+		<>
+			<Script
+				src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+				strategy="afterInteractive"
+			/>
+			<Script id="google-analytics" strategy="afterInteractive">
+				{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GA_TRACKING_ID}');
         `}
-      </Script>
-      <Script id="gtag-conversion-helper" strategy="afterInteractive">
-        {`
+			</Script>
+			<Script id="gtag-conversion-helper" strategy="afterInteractive">
+				{`
           function gtagSendEvent(url) {
             var callback = function () {
               if (typeof url === 'string') {
@@ -31,7 +31,7 @@ export default function GoogleAnalytics() {
             return false;
           }
         `}
-      </Script>
-    </>
-  )
+			</Script>
+		</>
+	);
 }
