@@ -3,7 +3,14 @@ import { appMessage } from "@/data/links";
 import { services } from "@/data/services";
 import { TService } from "@/lib/types";
 import { CheckCircle } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Our Services - Ultratech Aircon",
+  description:
+    "Professional air conditioning services including installation, repairs, and maintenance for residential and commercial properties in Cape Town.",
+};
 
 const Services = () => {
   return (

@@ -95,7 +95,7 @@ const HomeService = () => {
                   <p className="text-sm text-blue-100">Emergency support</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-blue-300">15+</p>
+                  <p className="text-3xl font-bold text-blue-300">7+</p>
                   <p className="text-sm text-blue-100">Years in Cape Town</p>
                 </div>
                 <div>
