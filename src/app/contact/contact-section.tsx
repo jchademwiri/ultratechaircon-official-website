@@ -13,9 +13,9 @@ interface ContactCardProps {
 
 const ContactCard = ({ icon, title, value, description, url, buttonLabel }: ContactCardProps) => {
   return (
-    <div className="group relative overflow-hidden rounded-lg border border-blue-600/30 bg-gradient-to-br from-blue-600/20 to-blue-600/10 p-8 transition-all duration-500 hover:scale-105 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/20">
+    <div className="group relative overflow-hidden rounded-lg border border-blue-600/30 bg-linear-to-br from-blue-600/20 to-blue-600/10 p-8 transition-all duration-500 hover:scale-105 hover:border-blue-600 hover:shadow-2xl hover:shadow-blue-600/20">
       {/* Decorative corner gradient */}
-      <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-gradient-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-linear-to-br from-white/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       
       <div className="relative flex flex-col items-center text-center">
         {/* Icon */}

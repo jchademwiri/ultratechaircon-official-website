@@ -65,7 +65,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-[100] w-full transition-all duration-300 ${
+      className={`fixed top-0 z-100 w-full transition-all duration-300 ${
         shadow
           ? "bg-blue-950 shadow-lg shadow-blue-900/20"
           : "bg-transparent"
@@ -76,7 +76,7 @@ const Navbar = () => {
         <Link 
           href="/" 
           aria-label="Ultra Tech Aircons - Home"
-          className="relative z-[101] transition-transform hover:scale-105"
+          className="relative z-101 transition-transform hover:scale-105"
         >
           <Image
             src={logo}
@@ -117,7 +117,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={handleNav}
-          className="relative z-[101] rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
+          className="relative z-101 rounded-lg p-2 text-white transition-colors hover:bg-white/10 md:hidden"
           aria-label={nav ? "Close menu" : "Open menu"}
           aria-expanded={nav}
           aria-controls="mobile-menu"
@@ -131,7 +131,7 @@ const Navbar = () => {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 z-[98] bg-black/60 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-98 bg-black/60 backdrop-blur-xs md:hidden"
             onClick={closeNav}
             aria-hidden="true"
           />
@@ -139,7 +139,7 @@ const Navbar = () => {
           {/* Mobile Menu */}
           <div
             id="mobile-menu"
-            className="fixed right-0 top-0 z-[99] h-screen w-[85%] max-w-sm overflow-y-auto bg-blue-950 shadow-2xl md:hidden"
+            className="fixed right-0 top-0 z-99 h-screen w-[85%] max-w-sm overflow-y-auto bg-blue-950 shadow-2xl md:hidden"
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation"

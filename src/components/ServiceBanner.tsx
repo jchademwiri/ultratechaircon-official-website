@@ -8,7 +8,7 @@ import { appMessage } from '@/data/links';
 
 const ServiceCard = ({ icon, title, description }: TCard) => {
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-white/10 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:scale-105">
+    <div className="group relative overflow-hidden rounded-xl bg-white/10 p-6 backdrop-blur-xs transition-all duration-300 hover:bg-white/20 hover:scale-105">
       <div className="mb-4 inline-flex rounded-full bg-blue-500/30 p-3 text-white transition-all duration-300 group-hover:bg-blue-500/50">
         {icon}
       </div>
@@ -46,7 +46,7 @@ const ServiceBanner = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 py-20">
+    <section className="relative overflow-hidden bg-linear-to-br from-blue-900 via-blue-800 to-blue-950 py-20">
       {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-[url('/aircon-repairs.jpg')] bg-cover bg-center opacity-20"
@@ -60,7 +60,7 @@ const ServiceBanner = () => {
       <div className="relative z-10 mx-auto w-[90%] max-w-7xl">
         {/* Header Section */}
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-6 py-2 text-sm font-semibold text-blue-200 backdrop-blur-sm">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-6 py-2 text-sm font-semibold text-blue-200 backdrop-blur-xs">
             <Snowflake className="h-4 w-4" />
             <span>Comprehensive AC Solutions</span>
           </div>

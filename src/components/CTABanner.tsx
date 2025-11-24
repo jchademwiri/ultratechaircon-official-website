@@ -6,10 +6,10 @@ const CTABanner = () => {
     <section className="relative overflow-hidden py-24 text-white">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-fixed bg-center opacity-70" />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/90 via-blue-950/85 to-blue-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-blue-900/90 via-blue-950/85 to-blue-950" />
       </div>
-      <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-gradient-to-b from-transparent via-blue-950/35 to-blue-950/80" />
-      <div className="pointer-events-none absolute inset-x-0 -bottom-20 h-20 bg-gradient-to-t from-blue-950/80 via-blue-950/30 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 -top-16 h-16 bg-linear-to-b from-transparent via-blue-950/35 to-blue-950/80" />
+      <div className="pointer-events-none absolute inset-x-0 -bottom-20 h-20 bg-linear-to-t from-blue-950/80 via-blue-950/30 to-transparent" />
 
       <div className="relative z-10 mx-auto w-[90%] max-w-4xl text-center">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-blue-100">
