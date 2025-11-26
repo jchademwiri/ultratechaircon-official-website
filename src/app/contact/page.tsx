@@ -1,11 +1,10 @@
-import {  ContactBanner } from "@/components";
-
+import { ContactBanner } from "@/components";
 
 const Contact = () => {
-  return (
-    <main>
-      <ContactBanner />
-    </main>
-  );
+	return (
+		<main>
+			<ContactBanner />
+		</main>
+	);
 };
 export default Contact;
